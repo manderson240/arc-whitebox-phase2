@@ -1,0 +1,13 @@
+6651 graded subs, 293 teams; michael_anderson7 rank 90
+ours (last 5):
+  #335835 adj 4.8e-09 raw 2.24e-08 util 0.215 failed 0
+  #335836 adj 4.82e-09 raw 2.23e-08 util 0.216 failed 0
+  #336255 adj 4.84e-09 raw 2.27e-08 util 0.214 failed 0
+  #336329 adj 4.72e-09 raw 2.21e-08 util 0.214 failed 0
+  #336372 adj 4.6e-09 raw 2.14e-08 util 0.215 failed 0
+top 5:
+  marius_binner        #336352 adj 1.36e-09 raw 1.11e-08 util 0.122
+  J2W                  #336188 adj 1.42e-09 raw 1.35e-08 util 0.106
+  mliston              #336342 adj 1.48e-09 raw 1.34e-08 util 0.111
+  oliver_chen          #335932 adj 1.48e-09 raw 1.15e-08 util 0.128
+  Luna                 #335927 adj 1.5e-09 raw 1.31e-08 util 0.115

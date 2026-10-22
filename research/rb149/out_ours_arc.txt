@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "~/cohezion-labs/arc-whitebox/research/rb149/arc_vs_ours_1024.py", line 33, in <module>
+    est = S.src_closure(ws, g, kappa, rank=4, aged=[("own", 5, 384), (8, 224)], mc_seed=net); secs = time.time() - t0
+  File "~/cohezion-labs/arc-whitebox/research/rebuild/srcchain_aug.py", line 274, in src_closure
+    Bt["Q"] = sum(float(QC[l - 1, k]) * Qb[k] for k in range(len(Qb))) / float(
+              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/cohezion-labs/arc-whitebox/research/rebuild/srcchain_aug.py", line 274, in <genexpr>
+    Bt["Q"] = sum(float(QC[l - 1, k]) * Qb[k] for k in range(len(Qb))) / float(
+                        ~~^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable

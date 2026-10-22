@@ -1,0 +1,12 @@
+timing_lock: COMPUTE (shared) waiting (13:42:41): whest-starterkit/.venv/bin/python research/rb136/drive136.py research/rb136/arms_nt.json nets:0,2,4 research/rb136/results_nt.jsonl
+timing_lock: COMPUTE acquired (13:42:41, load 12.19)
+8 tasks, 1 workers x OMP 16
+  PRUNE 0.05: mean pruned fraction over layers 0.176 per-layer [0.0, 0.004, 0.034, 0.08, 0.135, 0.154, 0.177, 0.222, 0.246, 0.216, 0.22, 0.277, 0.281, 0.3, 0.3]
+  PRUNE 0.05: mean pruned fraction over layers 0.176 per-layer [0.0, 0.004, 0.034, 0.08, 0.135, 0.154, 0.177, 0.222, 0.246, 0.216, 0.22, 0.277, 0.281, 0.3, 0.3]
+  PRUNE 0.05: mean pruned fraction over layers 0.188 per-layer [0.0, 0.012, 0.044, 0.086, 0.104, 0.153, 0.195, 0.208, 0.223, 0.263, 0.296, 0.278, 0.305, 0.337, 0.313]
+  PRUNE 0.05: mean pruned fraction over layers 0.188 per-layer [0.0, 0.012, 0.044, 0.086, 0.104, 0.153, 0.195, 0.208, 0.223, 0.263, 0.296, 0.278, 0.305, 0.337, 0.313]
+  PRUNE 0.05: mean pruned fraction over layers 0.188 per-layer [0.0, 0.012, 0.044, 0.086, 0.104, 0.153, 0.195, 0.208, 0.223, 0.263, 0.296, 0.278, 0.305, 0.337, 0.313]
+  PRUNE 0.05: mean pruned fraction over layers 0.177 per-layer [0.0, 0.014, 0.053, 0.086, 0.145, 0.157, 0.167, 0.22, 0.229, 0.232, 0.26, 0.271, 0.275, 0.274, 0.274]
+  PRUNE 0.05: mean pruned fraction over layers 0.177 per-layer [0.0, 0.014, 0.053, 0.086, 0.146, 0.157, 0.167, 0.22, 0.229, 0.232, 0.26, 0.271, 0.275, 0.274, 0.274]
+  PRUNE 0.05: mean pruned fraction over layers 0.177 per-layer [0.0, 0.014, 0.053, 0.086, 0.145, 0.157, 0.167, 0.22, 0.229, 0.232, 0.26, 0.271, 0.275, 0.274, 0.274]
+done 8 tasks in 9561s = 3 tasks/h

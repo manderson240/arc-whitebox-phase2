@@ -1,0 +1,12 @@
+{"net": 0, "mode": "decomp", "final": 2.041970624814814e-08, "secs": 26.1}
+{"net": 2, "mode": "decomp", "final": 2.3867614068554084e-08, "secs": 26.4}
+{"net": 4, "mode": "decomp", "final": 2.3660228349750665e-08, "secs": 29.1}
+{"net": 0, "mode": "varmu", "final": 5.1281871012636267e-08, "secs": 29.0}
+{"net": 2, "mode": "varmu", "final": 2.683912933414863e-07, "secs": 27.5}
+{"net": 4, "mode": "varmu", "final": 5.917076857023572e-08, "secs": 27.1}
+{"net": 0, "mode": "decomp", "final": 2.041970624814814e-08, "secs": 26.0}
+{"net": 0, "mode": "varmuraw", "final": 6.350926034616638e-08, "secs": 26.3}
+{"net": 2, "mode": "decomp", "final": 2.3867614068554084e-08, "secs": 26.1}
+{"net": 2, "mode": "varmuraw", "final": 3.3385964417949484e-07, "secs": 26.4}
+{"net": 4, "mode": "decomp", "final": 2.3660228349750665e-08, "secs": 26.8}
+{"net": 4, "mode": "varmuraw", "final": 6.629904636102093e-08, "secs": 26.6}

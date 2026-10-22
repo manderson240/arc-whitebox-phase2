@@ -1,0 +1,12 @@
+timing_lock: COMPUTE (shared) waiting (07:11:08): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_base_it0.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/base_it0.jsonl
+timing_lock: COMPUTE acquired (07:11:08, load 1.53)
+timing_lock: COMPUTE (shared) waiting (07:11:09): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_p2_box0.04.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/p2_box0.04.jsonl
+timing_lock: COMPUTE acquired (07:11:09, load 1.53)
+p2 box 0.04 delta [-0.04  0.04  0.04 -0.04  0.04 -0.04] pred -0.00693 actual 0.00207 theta {'ks': 0.6725526074, 'k31s': 0.7493837574, 'k31sD': 0.8326486194, 'q22sD': 0.9223578616, 'al07': 1.0408107742, 'hsD': 0.8647104952}
+timing_lock: COMPUTE (shared) waiting (07:19:20): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_p2_box0.02.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/p2_box0.02.jsonl
+timing_lock: COMPUTE acquired (07:19:20, load 16.72)
+p2 box 0.02 delta [-0.02  0.02  0.02 -0.02  0.02 -0.02] pred -0.00350 actual -0.00120 theta {'ks': 0.6861390713, 'k31s': 0.7345449648, 'k31sD': 0.816161072, 'q22sD': 0.9409907264, 'al07': 1.02020134, 'hsD': 0.882178806}
+timing_lock: COMPUTE (shared) waiting (07:27:27): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_p2_box0.01.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/p2_box0.01.jsonl
+timing_lock: COMPUTE acquired (07:27:27, load 17.50)
+p2 box 0.01 delta [-0.01  0.01  0.01 -0.01  0.01 -0.01] pred -0.00176 actual -0.00113 theta {'ks': 0.6930348836, 'k31s': 0.7272361203, 'k31sD': 0.8080401337, 'q22sD': 0.9504478404, 'al07': 1.0100501671, 'hsD': 0.8910448504}
+P2 FINAL (-0.00120451863894111, {'ks': 0.6861390713, 'k31s': 0.7345449648, 'k31sD': 0.816161072, 'q22sD': 0.9409907264, 'al07': 1.02020134, 'hsD': 0.882178806})

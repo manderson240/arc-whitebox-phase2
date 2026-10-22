@@ -1,0 +1,109 @@
+
+== P3a: six pairings of delta (x) H  ==  S(delta,H) + S(H,delta)
+PASS  max|g(H) - [S(I,H)+S(H,I)]| = 3.6e-15 (n=7)
+PASS  g(H) is fully symmetric (as a fourth cumulant must be)
+FIRED  falsifier: drop one of the 6 pairings -> min max-err 3.83
+FIRED  falsifier: S(I,H) alone (Lam_IH=1, Lam_HI=0) is not index-symmetric: asym 7.25
+
+== P3b: transport is exact on the S-form; delta goes to M = W^T W
+PASS  S(A,B)(.)W == S(WtAW, WtBW): 5.7e-14
+PASS  g(H)(.)W == g_M(WtHW): 5.7e-14
+FIRED  falsifier: g(WtHW) with delta kept (not mapped to M): rel err 0.77
+
+== P3c: the code's slice formulas == brute-force slices of sum Lam S(B_a,B_b)
+PASS  (4) 2.1e-19  (2,2) 1.1e-16  (3,1) 1.7e-18  (relative)
+PASS  sum Lam S(B_a,B_b) is fully symmetric with the shipped (symmetric) Lam
+FIRED  falsifier: (2,2) with factor 1 instead of 2: rel err 5.0e-01
+
+== P3d: Gaussian scale mixture => kappa4 = sum Lam S(B_a,B_b) exactly
+PASS  exact mixture kappa4 vs sum Lam S: rel err 6.9e-14
+FIRED  falsifier: non-Gaussian (uniform) conditional: rel err 166.2
+
+== P3e [measurement]: what the free build drops, and the sign of the shipped Lam
+      n=1024: mean M_ii 1.995; ||offdiag M||_F/||M||_F = 0.706; spectrum of M in [[0.    7.891]]
+      shipped Lam symmetric: max|Lam-Lam^T| = 0.0e+00; layers with a negative eigenvalue: [1, 7, 9, 10, 11, 12, 13, 14]; min eigenvalue -7.9e-03
+
+== P4a: toy factored chain, counting matmul (unit = one n x n x n product)
+PASS  per    L=  8: counted     84.00 units == closed form     84.00
+PASS  per    L= 16: counted    420.00 units == closed form    420.00
+PASS  per    L= 32: counted   1860.00 units == closed form   1860.00
+PASS  per    L= 64: counted   7812.00 units == closed form   7812.00
+PASS  per    L=128: counted  32004.00 units == closed form  32004.00
+PASS  window L=  8: counted     80.00 units == closed form     80.00
+PASS  window L= 16: counted    240.00 units == closed form    240.00
+PASS  window L= 32: counted    560.00 units == closed form    560.00
+PASS  window L= 64: counted   1200.00 units == closed form   1200.00
+PASS  window L=128: counted   2480.00 units == closed form   2480.00
+PASS  shared L=  8: counted     81.50 units == closed form     81.50
+PASS  shared L= 16: counted    289.50 units == closed form    289.50
+PASS  shared L= 32: counted    897.50 units == closed form    897.50
+PASS  shared L= 64: counted   2881.50 units == closed form   2881.50
+PASS  shared L=128: counted   9921.50 units == closed form   9921.50
+      log-log slope of total units vs L (L=32..128), per   : 2.052
+      log-log slope of total units vs L (L=32..128), window: 1.073
+      log-log slope of total units vs L (L=32..128), shared: 1.733
+PASS  per-source total = 2(L-1)(L-2) = Theta(L^2)
+PASS  window total = 4 sum_s min(w, L-1-s) = Theta(wL)
+PASS  shared = young 2480 + shared-basis terms 60.5 [Theta(L)] + F/K 7381.0 [Theta(r L^2/n)]
+PASS  shared-basis read (one trailing contraction) == per-source read: rel err 3.7e-16
+FIRED  falsifier: per-source per-layer count is NOT flat in l: range 0..248
+FIRED  falsifier: per-source totals do not fit a line in L: max rel residual 0.14
+FIRED  falsifier: window closed form applied to per-source counts: max per-layer mismatch 228 units
+
+== P4b: real code, per-layer logical product volume by site (n = 1024, depth 16, net 0)
+   v110_fk: total metered 20.2051 pt; sites ['C', 'E1a', 'E1b', 'E2', 'F0', 'F1', 'K0', 'K1', 'M2', 'T', 'T2']
+      layer       C     E1a     E1b      E2      F0      F1      K0      K1      M2       T      T2
+          0   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   0.000   0.000
+          1   2.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   2.000   0.000
+          2   4.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   4.000   0.000
+          3   6.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   6.000   0.000
+          4   8.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   5.812   2.000
+          5  10.000   0.375   0.375   0.750   0.000   0.000   0.000   0.000   0.750   7.500   2.000
+          6  10.375   0.375   0.375   0.750   0.000   0.750   0.000   0.750   0.750   7.590   2.000
+          7  10.750   0.375   0.375   0.750   0.000   1.500   0.000   1.500   0.750   7.656   2.000
+          8  11.000   0.375   0.375   0.750   0.438   1.500   0.438   1.500   0.750   7.848   2.000
+          9  11.188   0.375   0.375   0.750   0.875   1.500   0.875   1.500   0.750   7.752   2.000
+         10  11.438   0.375   0.375   0.750   1.312   1.500   1.312   1.500   0.750   7.937   2.000
+         11  11.625   0.375   0.375   0.750   1.750   1.500   1.750   1.500   0.750   8.121   2.000
+         12  11.875   0.375   0.375   0.750   2.188   1.500   2.188   1.500   0.750   7.690   2.000
+         13  12.062   0.375   0.375   0.750   2.625   1.500   2.625   1.500   0.750   7.861   2.000
+         14  12.312   0.375   0.375   0.750   3.062   1.500   3.062   1.500   0.750   7.711   2.000
+         15   0.000   0.000   0.000   0.000   3.500   1.500   0.000   0.000   0.000   7.875   2.000
+   v112_sb: total metered 18.9772 pt; sites ['C', 'E1a', 'E1b', 'E2', 'F0', 'F1', 'K0', 'K1', 'M2', 'T', 'T2']
+      layer       C     E1a     E1b      E2      F0      F1      K0      K1      M2       T      T2
+          0   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   0.000   0.000
+          1   2.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   2.000   0.000
+          2   4.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   4.000   0.000
+          3   6.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   6.000   0.000
+          4   8.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.750   5.812   2.000
+          5  10.000   0.375   0.375   0.750   0.000   0.000   0.000   0.000   0.750   7.500   2.000
+          6  10.375   0.000   0.000   0.750   0.000   0.750   0.000   0.750   0.750   7.590   2.000
+          7  10.375   0.000   0.000   0.750   0.000   1.500   0.000   1.500   0.750   7.328   2.000
+          8  10.625   0.000   0.000   0.750   0.438   1.500   0.438   1.500   0.750   7.520   2.000
+          9  10.625   0.000   0.000   0.750   0.875   1.500   0.875   1.500   0.750   7.251   2.000
+         10  10.625   0.000   0.000   0.750   1.312   1.500   1.312   1.500   0.750   7.251   2.000
+         11  10.625   0.000   0.000   0.750   1.750   1.500   1.750   1.500   0.750   7.251   2.000
+         12  10.625   0.000   0.000   0.750   2.188   1.500   2.188   1.500   0.750   6.714   2.000
+         13  10.625   0.000   0.000   0.750   2.625   1.500   2.625   1.500   0.750   6.714   2.000
+         14  10.625   0.000   0.000   0.750   3.062   1.500   3.062   1.500   0.750   6.445   2.000
+         15   0.000   0.000   0.000   0.000   3.500   1.500   0.000   0.000   0.000   6.445   2.000
+      predicted (young, 384-group, 224-group) per layer: 0:(0, 0, 0), 1:(1, 0, 0), 2:(2, 0, 0), 3:(3, 0, 0), 4:(4, 0, 0), 5:(5, 0, 0), 6:(5, 1, 0), 7:(5, 2, 0), 8:(5, 2, 1), 9:(5, 2, 2), 10:(5, 2, 3), 11:(5, 2, 4), 12:(5, 2, 5), 13:(5, 2, 6), 14:(5, 2, 7), 15:(5, 2, 8)
+PASS  F and K volume per layer = 2(m384*384 + m224*224)/n each, in BOTH builds (per-source, unchanged by v112)
+PASS  T-site rows (transported width) match the schedule: v110 adds r_b per old source, v112 one r_G per group
+PASS  C-site inner width = 2n*k_young + old width (v110: sum_b r_b; v112: sum_G r_G), up to 64-padding
+      old-tier logical units per layer [Q-transport + trailing-contraction | F + K]:
+      v110_fk: 0.00|0.00 0.00|0.00 0.00|0.00 0.00|0.00 0.00|0.00 0.00|0.00 0.71|1.50 1.41|3.00 1.82|3.88 2.19|4.75 2.59|5.62 3.00|6.50 3.28|7.38 3.67|8.25 3.99|9.12 1.88|5.00
+      v110_fk: totals  shared-able 24.54 units, F+K 55.00 units
+      v112_sb: 0.00|0.00 0.00|0.00 0.00|0.00 0.00|0.00 0.00|0.00 0.00|0.00 0.71|1.50 0.70|3.00 1.11|3.88 1.09|4.75 1.09|5.62 1.09|6.50 1.06|7.38 1.06|8.25 1.04|9.12 0.45|5.00
+      v112_sb: totals  shared-able 9.42 units, F+K 55.00 units
+      removed by v112 (logical, pre-Strassen): 15.13 units = 1.48 pt (V29 7B: net metered saving 1.23 pt, after Strassen-Winograd and net of the f64 solves)
+      entry sketches removed (E1a/E1b): 6.75 units; transport+contraction+sketch = 21.88 units = 2.14 pt logical (pre-Strassen; the metered split is printed below)
+      old-tier transported width per layer from the runs: v110 [0, 0, 0, 0, 0, 384, 768, 992, 1216, 1440, 1664, 1888, 2112, 2336, 2560]  v112 [0, 0, 0, 0, 0, 384, 384, 608, 608, 608, 608, 608, 608, 608, 608]
+PASS  v112: at most one 384 and one 224 basis transported at any layer (from the run's shapes)
+FIRED  falsifier: v110 old transported width grows past two bases: max 2560 columns
+PASS  claim 'the v112 old tier is Theta(L) in products' REFUTED: per-source F+K volume grows l8 3.88 -> l14 9.12 units
+      metered v110 - v112 = 1.2279 pt; inside sw_matmul by site (matmul part | all): C +0.329|+0.373, E1a +0.220|+0.227, E1b +0.220|+0.227, T +0.370|+0.403
+      outside sw_matmul by op (v110 - v112, pt): linalg.solve -0.661, linalg.qr +0.385, linalg.eigh +0.162, matmul +0.093, einsum +0.018
+PASS  attribution is complete: sites + outside ops = 1.2279 pt = total difference
+
+ALL CHECKS PASS AND ALL FALSIFIERS FIRE

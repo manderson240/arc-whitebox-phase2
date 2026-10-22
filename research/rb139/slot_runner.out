@@ -1,0 +1,21 @@
+still pending: none
+7345 graded subs, 302 teams; michael_anderson7 rank 83
+ours (last 5):
+  #336949 adj 4.19e-09 raw 2.11e-08 util 0.199 failed 0
+  #336957 adj 4.28e-09 raw 2.11e-08 util 0.203 failed 0
+  #336978 adj 4.14e-09 raw 2.11e-08 util 0.196 failed 0
+  #337002 adj 4.24e-09 raw 2.11e-08 util 0.201 failed 0
+  #337067 adj 4.16e-09 raw 2.11e-08 util 0.198 failed 0
+top 1:
+  marius_binner        #336948 adj 1.32e-09 raw 1.09e-08 util 0.121
+timing_lock: TIMING (exclusive) waiting (02:49:42)
+timing_lock: TIMING acquired (02:51:42, load 4.10)
+2026-10-20T02:53:13Z rung valid: VALID-20 in fresh-process chunks of 5
+2026-10-20T03:25:52Z rung mini10: run 1/2 v105_sw attempt 1 (load 3.47, psi 0.0, waited 91 s)
+2026-10-20T03:35:39Z   -> adj 4.347382846135968e-09 failed 0 res max 0.3409959502168931
+2026-10-20T03:38:10Z rung mini10: run 2/2 v110_fk attempt 1 (load 2.43, psi 0.0, waited 91 s)
+2026-10-20T03:48:25Z   -> adj 4.320881095873001e-09 failed 0 res max 0.35705313307698816
+2026-10-20T03:48:25Z rung ship: eval_mem net 0
+2026-10-20T03:49:13Z rung ship: whest package + archive validate
+2026-10-20T03:49:15Z - 2026-10-20T03:49:15Z ladder v110_fk vs v105_sw rungs=valid,mini10,ship: FAIL (not PASS: valid_adj=0.994073285537082:FAIL; mini10_residual=0.35705313307698816:FAIL; mini10_adj=0.9939039759779791:FAIL); report research/rebuild/ladder/slot_v110_fk.json; nothing submitted
+{'build': 'submissions/v110_fk', 'gate': 'G-RB139', 'decision': 'PASS', 'predicted': 4.214870730677228e-09, 'submitted': 'submitted v110_fk as #337268; prediction logged', 't': '2026-10-20T03:49:19Z'}

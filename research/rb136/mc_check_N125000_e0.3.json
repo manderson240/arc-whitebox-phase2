@@ -1,0 +1,21 @@
+{
+ "n": 64,
+ "N": 125000,
+ "eps": 0.3,
+ "n_signal_triples": 1152,
+ "n_null_triples": 248832,
+ "rho_offdiag_absmean": 0.35429478639101475,
+ "rho_offdiag_absmax": 0.9634154378412444,
+ "beta_tree": 0.9583202668408297,
+ "se_tree": 0.0042361921749129415,
+ "beta_nt": 1.0198938816117633,
+ "se_nt": 0.006782148054824435,
+ "rms_D": 0.13097583707711477,
+ "rms_resid_tree_only": 0.05180113150547804,
+ "rms_resid_tree_plus_nt": 0.007151551178782989,
+ "rms_resid_tree_minus_nt": 0.1048422945176737,
+ "rms_resid_exact_EG111": 0.008204424961218613,
+ "rms_nt_term": 0.053274463645811225,
+ "rms_null_D": 0.00432424771281019,
+ "secs": 3.3
+}

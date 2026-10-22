@@ -1,0 +1,14 @@
+v99r_rm    n=4 sum_wall=208.0 mean=51.99 sum_backend=187.4  per-run: r1/n0=50.6, r1/n2=49.6, r2/n0=51.7, r2/n2=56.1
+v105_sw    n=4 sum_wall=203.0 mean=50.74 sum_backend=183.8  per-run: r1/n0=50.0, r1/n2=51.7, r2/n0=50.7, r2/n2=50.5
+v106_1x    n=4 sum_wall=243.8 mean=60.95 sum_backend=223.3  per-run: r1/n0=61.7, r1/n2=61.3, r2/n0=60.6, r2/n2=60.2
+v102_sz    n=4 sum_wall=263.6 mean=65.89 sum_backend=241.7  per-run: r1/n0=65.7, r1/n2=65.2, r2/n0=66.6, r2/n2=66.1
+v105/v99r=0.9761 (|.-1|<=0.05: True)  v106/v105=1.2010 ([1.12,1.28]: True)  v102/v105=1.2985 ([1.18,1.36]: True)  order v105<v106<v102: True
+CALIBRATION PASS
+remote v106-v105 backend+overhead delta (sum over 4 predicts) 39.40 s; per class:
+  add            +20.09 s ( 51.0 %)  calls +690
+  subtract       +13.42 s ( 34.1 %)  calls +504
+  matmul          +4.48 s ( 11.4 %)  calls +336
+  stack           +1.64 s (  4.2 %)  calls +6
+  as_symmetric    +0.06 s (  0.2 %)  calls +0
+  take            -0.09 s ( -0.2 %)  calls -12
+  linalg.qr       -0.15 s ( -0.4 %)  calls +0

@@ -1,0 +1,1 @@
+{"build": "research/rb153/v153_age5", "ops": 14618, "util_pt": 18.0488, "net0_raw": 2.102722089273114e-08, "wall_s": 121.1, "by_op": {"matmul": 14.7908, "subtract": 0.721, "linalg.solve": 0.7193, "add": 0.6573, "stack": 0.3233, "einsum": 0.2962, "multiply": 0.206, "reshape": 0.1838, "linalg.qr": 0.0491, "concatenate": 0.0418, "linalg.eigh": 0.0232, "take": 0.0148}}

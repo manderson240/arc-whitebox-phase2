@@ -1,0 +1,34 @@
+{"build": "submissions/v117_kd", "util_pt": 18.8893, "raw_pooled": 2.083479551307882e-08, "per": {"10": 2.268333563460869e-08, "13": 2.144579143869027e-08, "16": 1.8375259465937496e-08}, "wall_s": 153.7}
+{"build": "submissions/v121_pr025", "util_pt": 18.8204, "raw_pooled": 2.0933053546549435e-08, "per": {"10": 2.2817959533652273e-08, "13": 2.1472735948334294e-08, "16": 1.850846515766174e-08}, "wall_s": 133.1}
+Traceback (most recent call last):
+  File "~/cohezion-labs/arc-whitebox/writeup/proofs/meter3.py", line 21, in <module>
+    out = e.predict(mlp, B)
+  File "~/cohezion-labs/arc-whitebox/submissions/v121_ns5/estimator.py", line 1446, in predict
+    Uc = U * coef  # (K,6,n,2)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/flopscope/_ndarray.py", line 1039, in __mul__
+    return _me().multiply(self, other)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/flopscope/_budget.py", line 1245, in wrapped
+    return inner_fn(*args, **kwargs)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/flopscope/_pointwise.py", line 1493, in wrapper
+    output_shape = _np.broadcast_shapes(x_view.shape, y_view.shape)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/numpy/lib/_stride_tricks_impl.py", line 474, in broadcast_shapes
+    return _broadcast_shape(*arrays)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/numpy/lib/_stride_tricks_impl.py", line 419, in _broadcast_shape
+    b = np.broadcast(*args[:32])
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (4, 6, 1024, 2) and arg 1 with shape (4, 5, 1, 1).
+Traceback (most recent call last):
+  File "~/cohezion-labs/arc-whitebox/writeup/proofs/meter3.py", line 21, in <module>
+    out = e.predict(mlp, B)
+  File "~/cohezion-labs/arc-whitebox/submissions/v121_ns7/estimator.py", line 1446, in predict
+    Uc = U * coef  # (K,6,n,2)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/flopscope/_ndarray.py", line 1039, in __mul__
+    return _me().multiply(self, other)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/flopscope/_budget.py", line 1245, in wrapped
+    return inner_fn(*args, **kwargs)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/flopscope/_pointwise.py", line 1493, in wrapper
+    output_shape = _np.broadcast_shapes(x_view.shape, y_view.shape)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/numpy/lib/_stride_tricks_impl.py", line 474, in broadcast_shapes
+    return _broadcast_shape(*arrays)
+  File "~/cohezion-labs/arc-whitebox/research/remote/venv/lib/python3.10/site-packages/numpy/lib/_stride_tricks_impl.py", line 419, in _broadcast_shape
+    b = np.broadcast(*args[:32])
+ValueError: shape mismatch: objects cannot be broadcast to a single shape.  Mismatch is between arg 0 with shape (4, 6, 1024, 2) and arg 1 with shape (4, 7, 1, 1).

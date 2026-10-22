@@ -1,0 +1,10 @@
+timing_lock: TIMING (exclusive) waiting (02:21:14)
+timing_lock: TIMING acquired (02:21:14, load 4.40)
+{"tag": "b139s", "net": 0, "ops": 15598}
+{"tag": "b139s", "net": 2, "ops": 15598}
+BAR1 net 0 final-layer max|dev|/max|ref| = 2.9147829579892147e-15  all-layer = 2.593029403834336e-15
+BAR1 net 2 final-layer max|dev|/max|ref| = 3.2176606839841856e-15  all-layer = 2.4409911387563754e-15
+{"build": "submissions/v105_sw", "ops": 14863, "util": 20.3224, "out": "de7c8a53ff235abe"}
+{"build": "submissions/v110_s", "ops": 15582, "util": 20.1573, "out": "38a98a423496826a"}
+DIFFERENT
+REMOTE_CHECK PASS {"build": "submissions/v110_s", "nets": [0, 2], "rows": [{"net": 0, "remote_handle": true, "shape": [16, 1024], "finite": true, "digest": "38a98a423496826a", "util": 20.158072287631512, "sec": 55.1}, {"net": 2, "remote_handle": true, "shape": [16, 1024], "finite": true, "digest": "cdacd880d3cb6348", "util": 19.855226461550046, "sec": 53.3}], "cmp": [{"net": 0, "digest_remote": "38a98a423496826a", "digest_local": "38a98a423496826a", "util_remote": 20.158072, "util_local": 20.157309, "ops_local": 15582, "max_abs_rel": 0.0, "ok": true}, {"net": 2, "digest_remote": "cdacd880d3cb6348", "digest_local": "cdacd880d3cb6348", "util_remote": 19.855226, "util_local": 19.854464, "ops_local": 15362, "max_abs_rel": 0.0, "ok": true}], "peak_bytes": 864820992, "peak_v98": 864820992, "flags": []}

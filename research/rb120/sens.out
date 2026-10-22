@@ -1,0 +1,5 @@
+36 tasks, 6 workers x OMP 2
+12/36 242 tasks/h
+24/36 240 tasks/h
+36/36 248 tasks/h
+done 36 tasks in 523s = 248 tasks/h

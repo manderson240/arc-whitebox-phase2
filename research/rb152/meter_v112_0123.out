@@ -1,0 +1,1 @@
+{"build": "submissions/v112_sb", "ops": 14395, "util_pt": 18.9772, "net0_raw": 1.904670756156714e-08, "wall_s": 49.2, "by_op": {"matmul": 15.7255, "subtract": 0.7592, "linalg.solve": 0.6609, "add": 0.6578, "stack": 0.3315, "einsum": 0.2893, "multiply": 0.207, "reshape": 0.1895, "linalg.qr": 0.0491, "concatenate": 0.0442, "linalg.eigh": 0.0232, "take": 0.0183}}

@@ -1,0 +1,17 @@
+l= 0 zero layer, |a| max 0.000e+00
+l= 1 rel 5.259e-03
+l= 2 rel 4.275e-13
+l= 3 rel 2.758e-02
+l= 4 rel 2.214e-02
+l= 5 rel 2.603e-02
+l= 6 rel 2.275e-02
+l= 7 rel 2.661e-02
+l= 8 rel 1.659e-02
+l= 9 rel 2.438e-02
+l=10 rel 3.080e-02
+l=11 rel 2.643e-02
+l=12 rel 3.552e-02
+l=13 rel 3.913e-02
+l=14 rel 3.487e-02
+l=15 rel 1.959e-02
+WORST rel 3.913e-02 -> FAIL

@@ -1,0 +1,4 @@
+u48 fit nets 48
+u48 M2_U_L4 VALID TF R2 0.1562 (ep 22, 22s)
+u48 head shared8 TF R2 at l=15 on VALID 0.1458
+saved ~/cohezion-labs/arc-whitebox/research/rb120/cache/corr_u48_MIX2.npz

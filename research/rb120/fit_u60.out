@@ -1,0 +1,4 @@
+u60 fit nets 60
+u60 M2_U_L4 VALID TF R2 0.1577 (ep 22, 33s)
+u60 head shared8 TF R2 at l=15 on VALID 0.1458
+saved ~/cohezion-labs/arc-whitebox/research/rb120/cache/corr_u60_MIX2.npz

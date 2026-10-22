@@ -1,0 +1,25 @@
+~/cohezion-labs/arc-whitebox/research/rb149/arc_valid.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  for l in range(L): mlp.Ws[l].weight.copy_(torch.from_numpy(np.asarray(ws[l], dtype=np.float32)).T)
+{"net": 10, "secs": 7.030877590179443, "final_mse": 3.638487707229191e-08, "torch_flops": 0}
+Traceback (most recent call last):
+  File "~/cohezion-labs/arc-whitebox/research/rb149/arc_valid.py", line 23, in <module>
+    out = mlp_kprop(mlp, {1: torch.zeros(n), 2: torch.eye(n)}, k_max=3, factor=True, output_all=True, up_to_layer=f"act{L-1}")
+  File "~/cohezion-labs/arc-whitebox/research/rb149/ref/src/mlp_kprop/kprop_harmonic.py", line 591, in mlp_kprop
+    K = nonlin_kprop(
+        K,
+    ...<4 lines>...
+        factor=factor,
+    )
+  File "~/cohezion-labs/arc-whitebox/research/rb149/ref/src/mlp_kprop/kprop_harmonic.py", line 369, in nonlin_kprop
+    return factored_nonlin_kprop_k3(
+        K_in=K_in,
+    ...<3 lines>...
+        use_pK=use_pK,
+    )
+  File "~/cohezion-labs/arc-whitebox/research/rb149/ref/src/mlp_kprop/factor_k3.py", line 382, in factored_nonlin_kprop_k3
+    pK_111.contract_wick_(w(1))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "~/cohezion-labs/arc-whitebox/research/rb149/ref/src/mlp_kprop/factor_k3.py", line 197, in contract_wick_
+    factor * wick[:, None] for i, factor in enumerate(self._factors)
+    ~~~~~~~^~~~~~~~~~~~~~~
+RuntimeError: [enforce fail at alloc_cpu.cpp:127] err == 0. DefaultCPUAllocator: can't allocate memory: you tried to allocate 100663296 bytes. Error code 12 (Cannot allocate memory)

@@ -1,0 +1,5 @@
+a2o8 fit nets 60
+a2o8 M2_U_L4 VALID TF R2 0.1494 (ep 24, 25s, rows 737280)
+a2o8 head shared8 TF R2 at l=15 on VALID 0.1673
+max|dW| vs shipped corr_sscf_M2_U_L4.npz 0.3598075538557587
+max|dW| vs shipped corr_sscf_M1h15.npz 0.2905826146598416

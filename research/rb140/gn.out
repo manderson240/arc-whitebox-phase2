@@ -1,0 +1,42 @@
+timing_lock: COMPUTE (shared) waiting (04:42:35): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_base_it0.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/base_it0.jsonl
+timing_lock: COMPUTE acquired (04:42:35, load 1.82)
+CONTROL FIT12 shipped vs rb130 res_fit12_SHIPPED: max|rel diff| 0.0 n 12
+timing_lock: COMPUTE (shared) waiting (04:50:47): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_ks_p.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_ks_p.jsonl
+timing_lock: COMPUTE acquired (04:50:47, load 16.65)
+timing_lock: COMPUTE (shared) waiting (04:58:56): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_ks_m.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_ks_m.jsonl
+timing_lock: COMPUTE acquired (04:58:56, load 16.46)
+timing_lock: COMPUTE (shared) waiting (05:07:11): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_k31s_p.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_k31s_p.jsonl
+timing_lock: COMPUTE acquired (05:07:11, load 15.91)
+timing_lock: COMPUTE (shared) waiting (05:15:22): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_k31s_m.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_k31s_m.jsonl
+timing_lock: COMPUTE acquired (05:15:22, load 16.71)
+timing_lock: COMPUTE (shared) waiting (05:23:33): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_k31sD_p.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_k31sD_p.jsonl
+timing_lock: COMPUTE acquired (05:23:33, load 16.64)
+timing_lock: COMPUTE (shared) waiting (05:31:45): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_k31sD_m.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_k31sD_m.jsonl
+timing_lock: COMPUTE acquired (05:31:46, load 15.79)
+timing_lock: COMPUTE (shared) waiting (05:39:58): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_q22sD_p.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_q22sD_p.jsonl
+timing_lock: COMPUTE acquired (05:39:58, load 16.45)
+timing_lock: COMPUTE (shared) waiting (05:48:07): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_q22sD_m.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_q22sD_m.jsonl
+timing_lock: COMPUTE acquired (05:48:07, load 17.34)
+timing_lock: COMPUTE (shared) waiting (05:56:16): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_al07_p.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_al07_p.jsonl
+timing_lock: COMPUTE acquired (05:56:16, load 17.73)
+timing_lock: COMPUTE (shared) waiting (06:04:31): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_al07_m.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_al07_m.jsonl
+timing_lock: COMPUTE acquired (06:04:31, load 15.21)
+timing_lock: COMPUTE (shared) waiting (06:12:42): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_hsD_p.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_hsD_p.jsonl
+timing_lock: COMPUTE acquired (06:12:42, load 15.80)
+timing_lock: COMPUTE (shared) waiting (06:20:53): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_hsD_m.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_hsD_m.jsonl
+timing_lock: COMPUTE acquired (06:20:53, load 16.83)
+it0 base pooled 1.293712e-06  grad(per dlogtheta) [ 0.0203 -0.004  -0.0041  0.0998 -0.0001  0.0483]  diagH [0.00098 0.00312 0.00128 0.16716 0.00041 0.00482]
+timing_lock: COMPUTE (shared) waiting (06:28:58): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_verify0.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_verify0.jsonl
+timing_lock: COMPUTE acquired (06:28:58, load 17.11)
+it0 try0 lam 0.01 delta [-0.1 -0.1 -0.1 -0.1  0.1 -0.1] predicted dlogJ -0.01538 actual 0.02584 theta {'ks': 0.6333861926, 'k31s': 0.651482941, 'k31sD': 0.7238699344, 'q22sD': 0.8686439213, 'al07': 1.1051709181, 'hsD': 0.8143536762}
+timing_lock: COMPUTE (shared) waiting (06:37:15): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_verify1.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_verify1.jsonl
+timing_lock: COMPUTE acquired (06:37:15, load 15.28)
+it0 try1 lam 0.1 delta [-0.1 -0.1 -0.1 -0.1  0.1 -0.1] predicted dlogJ -0.01538 actual 0.02584 theta {'ks': 0.6333861926, 'k31s': 0.651482941, 'k31sD': 0.7238699344, 'q22sD': 0.8686439213, 'al07': 1.1051709181, 'hsD': 0.8143536762}
+timing_lock: COMPUTE (shared) waiting (06:45:28): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_verify2.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_verify2.jsonl
+timing_lock: COMPUTE acquired (06:45:28, load 16.45)
+it0 try2 lam 1 delta [-0.1     0.0778  0.1    -0.1     0.1    -0.1   ] predicted dlogJ -0.01679 actual 0.03496 theta {'ks': 0.6333861926, 'k31s': 0.7782473498, 'k31sD': 0.8841367345, 'q22sD': 0.8686439213, 'al07': 1.1051709181, 'hsD': 0.8143536762}
+timing_lock: COMPUTE (shared) waiting (06:53:43): rb140/run_arm.sh ~/cohezion-labs/arc-whitebox/research/rb140/res/arms_it0_verify3.json fit60 ~/cohezion-labs/arc-whitebox/research/rb140/res/it0_verify3.jsonl
+timing_lock: COMPUTE acquired (06:53:43, load 18.80)
+it0 try3 lam 10 delta [-0.1     0.1     0.1    -0.0663  0.1    -0.1   ] predicted dlogJ -0.01393 actual 0.01491 theta {'ks': 0.6333861926, 'k31s': 0.795723061, 'k31sD': 0.8841367345, 'q22sD': 0.8984558526, 'al07': 1.1051709181, 'hsD': 0.8143536762}
+no accepted step; stopping
+FINAL {'ks': 0.7, 'k31s': 0.72, 'k31sD': 0.8, 'q22sD': 0.96, 'al07': 1.0, 'hsD': 0.9} FIT60 pooled ratio vs shipped 1.0

@@ -1,0 +1,62 @@
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1453: SymmetryLossWarning: Symmetry lost along dims (0, 1): stack inputs disagree or include plain arrays. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  Cpow = fnp.stack(cp, axis=0)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1474: SymmetryLossWarning: Symmetry lost along dims (0, 1): add — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  Qcoef = (g_l * (1.0 / 12.0)) * (fnp.outer(var_pre, var_pre) + 2.0 * C * C)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1478: SymmetryLossWarning: Symmetry lost along dims (0, 1): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  X = Zs + (Tz * 0.5) * S21
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1480: SymmetryLossWarning: Symmetry lost along dims (0, 1): subtract — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  (S_ff + (X + X.T))
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1490: SymmetryLossWarning: Symmetry lost along dims (0, 1): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  (A21 + Tz * Pser + Tz.T * Qser - fnp.outer(g2, g))
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1490: SymmetryLossWarning: Symmetry lost along dims (1, 0): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  (A21 + Tz * Pser + Tz.T * Qser - fnp.outer(g2, g))
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1599: SymmetryLossWarning: Symmetry lost along dims (0, 1): add — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  That = That + (A1 * Y11 + X12 * A1f2 + 0.5 * (X21 * (A1 * fh3[None, :])) + u[:, None] * A1f1)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1603: SymmetryLossWarning: Symmetry lost along dims (0, 1): subtract — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  Voff = 3.0 * (Dadj - fnp.diag(d3)).T
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1226: SymmetryLossWarning: Symmetry lost along dims (0, 1): concatenate breaks block symmetry or mixes with plain inputs. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  opT = fnp.concatenate(
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1383: SymmetryLossWarning: Symmetry lost along dims (0, 1): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  + qc_l[2:3] * fnp.outer(vz, vz)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1384: SymmetryLossWarning: Symmetry lost along dims (0, 1): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  + qc_l[3:4] * fnp.outer(oz, oz)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1387: SymmetryLossWarning: Symmetry lost along dims (0, 1): stack inputs disagree or include plain arrays. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  Bst = fnp.stack([fnp.diag(m_i), cov_pre, Qf], axis=0)  # (3,n,n)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1575: SymmetryLossWarning: Symmetry lost along dims (0, 1): subtract — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  D21 = Tz - fnp.diag(k3z)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1615: SymmetryLossWarning: Symmetry lost along dims (1, 2): concatenate breaks block symmetry or mixes with plain inputs. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  yP = fnp.concatenate([yP, I_n[None]], axis=0)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1243: SymmetryLossWarning: Symmetry lost along dims (0, 1): concatenate breaks block symmetry or mixes with plain inputs. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  AllT2 = sw_matmul(fnp.concatenate([yA[k_y - 1].T, cov], axis=0)[None], w[None], sites["T2"])[0]
+{"tag": "v112f64", "net": 0, "util": 0.3729297394424975, "ops": 14411, "residual_s": 0.4896347794565372, "vmpeak": 9306, "raw": 1.905042232886807e-08, "load": "64.96", "adj": 7.104469035374306e-09}
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1453: SymmetryLossWarning: Symmetry lost along dims (0, 1): stack inputs disagree or include plain arrays. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  Cpow = fnp.stack(cp, axis=0)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1474: SymmetryLossWarning: Symmetry lost along dims (0, 1): add — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  Qcoef = (g_l * (1.0 / 12.0)) * (fnp.outer(var_pre, var_pre) + 2.0 * C * C)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1478: SymmetryLossWarning: Symmetry lost along dims (0, 1): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  X = Zs + (Tz * 0.5) * S21
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1480: SymmetryLossWarning: Symmetry lost along dims (0, 1): subtract — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  (S_ff + (X + X.T))
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1490: SymmetryLossWarning: Symmetry lost along dims (0, 1): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  (A21 + Tz * Pser + Tz.T * Qser - fnp.outer(g2, g))
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1490: SymmetryLossWarning: Symmetry lost along dims (1, 0): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  (A21 + Tz * Pser + Tz.T * Qser - fnp.outer(g2, g))
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1599: SymmetryLossWarning: Symmetry lost along dims (0, 1): add — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  That = That + (A1 * Y11 + X12 * A1f2 + 0.5 * (X21 * (A1 * fh3[None, :])) + u[:, None] * A1f1)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1603: SymmetryLossWarning: Symmetry lost along dims (0, 1): subtract — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  Voff = 3.0 * (Dadj - fnp.diag(d3)).T
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1226: SymmetryLossWarning: Symmetry lost along dims (0, 1): concatenate breaks block symmetry or mixes with plain inputs. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  opT = fnp.concatenate(
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1383: SymmetryLossWarning: Symmetry lost along dims (0, 1): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  + qc_l[2:3] * fnp.outer(vz, vz)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1384: SymmetryLossWarning: Symmetry lost along dims (0, 1): multiply — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  + qc_l[3:4] * fnp.outer(oz, oz)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1387: SymmetryLossWarning: Symmetry lost along dims (0, 1): stack inputs disagree or include plain arrays. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  Bst = fnp.stack([fnp.diag(m_i), cov_pre, Qf], axis=0)  # (3,n,n)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1575: SymmetryLossWarning: Symmetry lost along dims (0, 1): subtract — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  D21 = Tz - fnp.diag(k3z)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1615: SymmetryLossWarning: Symmetry lost along dims (1, 2): concatenate breaks block symmetry or mixes with plain inputs. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  yP = fnp.concatenate([yP, I_n[None]], axis=0)
+~/cohezion-labs/arc-whitebox/submissions/v112_sb/estimator.py:1243: SymmetryLossWarning: Symmetry lost along dims (0, 1): concatenate breaks block symmetry or mixes with plain inputs. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  AllT2 = sw_matmul(fnp.concatenate([yA[k_y - 1].T, cov], axis=0)[None], w[None], sites["T2"])[0]
+{"tag": "v112f64", "net": 2, "util": 0.371239347154642, "ops": 14411, "residual_s": 2.685835876094643, "vmpeak": 9376, "raw": 2.2390535655147006e-08, "load": "50.55", "adj": 8.31224783905951e-09}

@@ -1,0 +1,9 @@
+timing_lock: COMPUTE (shared) waiting (14:51:07): bash rb155/mexr_pipe.sh
+timing_lock: COMPUTE acquired (15:31:09, load 20.23)
+start 15:31:09
+WORST rel 3.913e-02 -> FAIL
+WORST rel 3.913e-02 -> FAIL
+stage a done 15:31:32 NOQLAST=0
+WORST rel 3.913e-02 -> FAIL
+stage b done 15:33:12
+stage c done 15:34:23

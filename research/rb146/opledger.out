@@ -1,0 +1,3 @@
+timing_lock: COMPUTE (shared) waiting (19:07:01): nice -n 19 whest-starterkit/.venv/bin/python research/rb146/opledger146.py submissions/v112_sb /tmp/claude-1000/-home-mike-anderson-dev-cohezion--claude-worktrees-agent-journeys-exotic-vacuum-585a4a/d14921a9-6a6b-4175-ac1f-9784d9b50681/scratchpad/rb146/ledger_v112_sb.jsonl
+timing_lock: COMPUTE acquired (19:07:01, load 9.08)
+{"build": "submissions/v112_sb", "ops": 14395, "util_pt": 18.9772, "out": "/tmp/claude-1000/-home-mike-anderson-dev-cohezion--claude-worktrees-agent-journeys-exotic-vacuum-585a4a/d14921a9-6a6b-4175-ac1f-9784d9b50681/scratchpad/rb146/ledger_v112_sb.jsonl"}

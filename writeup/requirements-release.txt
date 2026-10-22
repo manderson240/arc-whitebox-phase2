@@ -1,0 +1,8 @@
+# Dependency manifest for the released estimator (rules v14 §8). Pinned to the versions the AIcrowd
+# grader used for Phase 2 (flopscope 0.12.3 per organizer post 18251, 2026-10-17), verified in the
+# workspace's grader-matched venv (research/remote/venv) on 2026-10-21.
+# The estimator itself imports only flopscope (and its numpy); no other runtime dependency.
+python_version >= "3.10"
+flopscope==0.12.3
+whestbench==0.16.2
+numpy==2.2.6

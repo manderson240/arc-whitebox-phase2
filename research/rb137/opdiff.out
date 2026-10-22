@@ -1,0 +1,612 @@
+{"a": "submissions/v105_sw", "b": "submissions/v106_1x", "net": 0, "ops_a": 14863, "ops_b": 15284, "util_a": 20.3223618868833, "util_b": 19.99510593859668}
+BY_OP added [["subtract", 474], ["add", 380], ["matmul", 150], ["stack", 6], ["reshape", 4], ["zeros", 1]]
+BY_OP removed [["concatenate", -1], ["negative", -1], ["argsort", -1], ["take", -2], ["matmul", -64], ["add", -195], ["subtract", -330]]
+NET_BY_OP {"subtract": 144, "take": -2, "add": 185, "matmul": 86, "reshape": 4, "argsort": -1, "stack": 6, "concatenate": -1, "negative": -1, "zeros": 1}
+LOCAL_BACKEND_s a=42.575 b=51.374
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 7, 1, 14, 16), (7, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 20, "d": 20, "dflop": 75295360, "dback_ms": 133.39}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 7, 1, 16, 16), (7, 7, 7, 7, 7, 1, 16, 16))", "n_a": 14, "n_b": 30, "d": 16, "dflop": 68841472, "dback_ms": 84.32}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 128, 16), (3, 7, 7, 7, 7, 1, 128, 16))", "n_a": 0, "n_b": 13, "d": 13, "dflop": 191772672, "dback_ms": 263.31}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 128, 16), (4, 7, 7, 7, 7, 1, 128, 16))", "n_a": 0, "n_b": 13, "d": 13, "dflop": 255696896, "dback_ms": 353.74}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 28, 32), (7, 7, 7, 7, 1, 28, 32))", "n_a": 8, "n_b": 20, "d": 12, "dflop": 25815552, "dback_ms": 31.3}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 27, 32), (7, 7, 7, 7, 1, 27, 32))", "n_a": 12, "n_b": 0, "d": -12, "dflop": -24893568, "dback_ms": -32.56}
+{"op": "subtract", "sub": null, "shapes": "((1, 448, 512), (1, 448, 512))", "n_a": 8, "n_b": 20, "d": 12, "dflop": 2752512, "dback_ms": 1.75}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 216, 256), (7, 1, 216, 256))", "n_a": 12, "n_b": 0, "d": -12, "dflop": -4644864, "dback_ms": -3.5}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 56, 64), (7, 7, 7, 1, 56, 64))", "n_a": 8, "n_b": 20, "d": 12, "dflop": 14751744, "dback_ms": 14.42}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 54, 64), (7, 7, 7, 1, 54, 64))", "n_a": 12, "n_b": 0, "d": -12, "dflop": -14224896, "dback_ms": -14.65}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 108, 128), (7, 7, 1, 108, 128))", "n_a": 12, "n_b": 0, "d": -12, "dflop": -8128512, "dback_ms": -6.98}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 224, 256), (7, 1, 224, 256))", "n_a": 8, "n_b": 20, "d": 12, "dflop": 4816896, "dback_ms": 3.45}
+{"op": "subtract", "sub": null, "shapes": "((1, 432, 512), (1, 432, 512))", "n_a": 12, "n_b": 0, "d": -12, "dflop": -2654208, "dback_ms": -1.66}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 112, 128), (7, 7, 1, 112, 128))", "n_a": 8, "n_b": 20, "d": 12, "dflop": 8429568, "dback_ms": 6.75}
+{"op": "subtract", "sub": null, "shapes": "((1, 400, 512), (1, 400, 512))", "n_a": 8, "n_b": 0, "d": -8, "dflop": -1638400, "dback_ms": -1.03}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 200, 256), (7, 1, 200, 256))", "n_a": 8, "n_b": 0, "d": -8, "dflop": -2867200, "dback_ms": -1.96}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 7, 1, 13, 16), (7, 7, 7, 7, 7, 1, 13, 16))", "n_a": 0, "n_b": 8, "d": 8, "dflop": 27966848, "dback_ms": 50.33}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 26, 32), (7, 7, 7, 7, 1, 26, 32))", "n_a": 0, "n_b": 8, "d": 8, "dflop": 15981056, "dback_ms": 21.95}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 50, 64), (7, 7, 7, 1, 50, 64))", "n_a": 8, "n_b": 0, "d": -8, "dflop": -8780800, "dback_ms": -8.68}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 25, 32), (7, 7, 7, 7, 1, 25, 32))", "n_a": 8, "n_b": 0, "d": -8, "dflop": -15366400, "dback_ms": -21.57}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 7, 1, 12, 16), (7, 7, 7, 7, 7, 1, 12, 16))", "n_a": 0, "n_b": 8, "d": 8, "dflop": 25815552, "dback_ms": 48.29}
+{"op": "subtract", "sub": null, "shapes": "((1, 416, 512), (1, 416, 512))", "n_a": 0, "n_b": 8, "d": 8, "dflop": 1703936, "dback_ms": 1.14}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 52, 64), (7, 7, 7, 1, 52, 64))", "n_a": 0, "n_b": 8, "d": 8, "dflop": 9132032, "dback_ms": 8.97}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 208, 256), (7, 1, 208, 256))", "n_a": 0, "n_b": 8, "d": 8, "dflop": 2981888, "dback_ms": 2.07}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 100, 128), (7, 7, 1, 100, 128))", "n_a": 8, "n_b": 0, "d": -8, "dflop": -5017600, "dback_ms": -4.25}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 104, 128), (7, 7, 1, 104, 128))", "n_a": 0, "n_b": 8, "d": 8, "dflop": 5218304, "dback_ms": 4.3}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 7, 1, 15, 16), (7, 7, 7, 7, 7, 1, 15, 16))", "n_a": 0, "n_b": 8, "d": 8, "dflop": 32269440, "dback_ms": 56.81}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 64, 16), (3, 7, 7, 7, 7, 1, 64, 16))", "n_a": 0, "n_b": 7, "d": 7, "dflop": 51631104, "dback_ms": 81.46}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 96, 16), (3, 7, 7, 7, 7, 1, 96, 16))", "n_a": 0, "n_b": 7, "d": 7, "dflop": 77446656, "dback_ms": 113.4}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 96, 16), (4, 7, 7, 7, 7, 1, 96, 16))", "n_a": 0, "n_b": 7, "d": 7, "dflop": 103262208, "dback_ms": 154.87}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 32, 16), (4, 7, 7, 7, 7, 1, 32, 16))", "n_a": 0, "n_b": 7, "d": 7, "dflop": 34420736, "dback_ms": 76.53}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 32, 16), (3, 7, 7, 7, 7, 1, 32, 16))", "n_a": 0, "n_b": 7, "d": 7, "dflop": 25815552, "dback_ms": 60.87}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 64, 16), (4, 7, 7, 7, 7, 1, 64, 16))", "n_a": 0, "n_b": 7, "d": 7, "dflop": 68841472, "dback_ms": 108.82}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 158, 16), (4, 7, 7, 7, 7, 1, 158, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 145673472, "dback_ms": 181.61}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 147, 16), (4, 7, 7, 7, 7, 1, 147, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 135531648, "dback_ms": 195.73}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 161, 16), (3, 7, 7, 7, 7, 1, 161, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 111329568, "dback_ms": 147.97}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 64, 32), (7, 7, 7, 7, 1, 32, 32))", "n_a": 39, "n_b": 33, "d": -6, "dflop": -1858719744, "dback_ms": -50.19}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 165, 16), (4, 7, 7, 7, 7, 1, 165, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 152127360, "dback_ms": 182.25}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 144, 16), (4, 7, 7, 7, 7, 1, 144, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 132765696, "dback_ms": 179.71}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 161, 16), (4, 7, 7, 7, 7, 1, 161, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 148439424, "dback_ms": 195.18}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 140, 16), (4, 7, 7, 7, 7, 1, 140, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 129077760, "dback_ms": 181.56}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 168, 16), (3, 7, 7, 7, 7, 1, 168, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 116169984, "dback_ms": 124.35}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 151, 16), (3, 7, 7, 7, 7, 1, 151, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 104414688, "dback_ms": 144.63}
+{"op": "stack", "sub": null, "shapes": "()", "n_a": 1215, "n_b": 1221, "d": 6, "dflop": 797686644, "dback_ms": 277.25}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 140, 16), (3, 7, 7, 7, 7, 1, 140, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 96808320, "dback_ms": 134.39}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 158, 16), (3, 7, 7, 7, 7, 1, 158, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 109255104, "dback_ms": 138.41}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 134, 16), (4, 7, 7, 7, 7, 1, 134, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 123545856, "dback_ms": 170.27}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 154, 16), (4, 7, 7, 7, 7, 1, 154, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 141985536, "dback_ms": 193.78}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 165, 16), (3, 7, 7, 7, 7, 1, 165, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 114095520, "dback_ms": 134.75}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 134, 16), (3, 7, 7, 7, 7, 1, 134, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 92659392, "dback_ms": 126.62}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 147, 16), (3, 7, 7, 7, 7, 1, 147, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 101648736, "dback_ms": 146.01}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 168, 16), (4, 7, 7, 7, 7, 1, 168, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 154893312, "dback_ms": 173.52}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 151, 16), (4, 7, 7, 7, 7, 1, 151, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 139219584, "dback_ms": 194.32}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 144, 16), (3, 7, 7, 7, 7, 1, 144, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 99574272, "dback_ms": 135.41}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 154, 16), (3, 7, 7, 7, 7, 1, 154, 16))", "n_a": 0, "n_b": 6, "d": 6, "dflop": 106489152, "dback_ms": 144.57}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 256, 32), (7, 7, 7, 7, 1, 256, 32))", "n_a": 4, "n_b": 9, "d": 5, "dflop": 98344960, "dback_ms": 101.85}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 128, 16), (4, 7, 7, 7, 7, 1, 128, 16))", "n_a": 4, "n_b": 9, "d": 5, "dflop": 98344960, "dback_ms": 136.04}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 128, 16), (3, 7, 7, 7, 7, 1, 128, 16))", "n_a": 4, "n_b": 9, "d": 5, "dflop": 73758720, "dback_ms": 104.25}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1264, 2, 2, 32), (7, 7, 1, 1264, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 31711232, "dback_ms": 24.41}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 128, 15), (4, 7, 7, 7, 7, 1, 15, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2281603072, "dback_ms": 62.75}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 232, 256), (7, 1, 232, 256))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -1662976, "dback_ms": -1.1}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 96, 16), (3, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1371912192, "dback_ms": 42.31}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 128, 16), (4, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2438955008, "dback_ms": 67.45}
+{"op": "add", "sub": null, "shapes": "((1, 4096, 2, 2, 2, 2, 32), (1, 4096, 2, 2, 2, 2, 32))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 8388608, "dback_ms": 4.98}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 316, 32), (7, 7, 7, 7, 1, 316, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 97115648, "dback_ms": 102.0}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 96, 16), (4, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1829216256, "dback_ms": 56.48}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2048, 2, 2, 2, 32), (7, 1, 2048, 2, 2, 2, 32))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 14680064, "dback_ms": 13.6}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 140, 14), (3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1742549760, "dback_ms": 50.32}
+{"op": "add", "sub": null, "shapes": "((1, 5280, 2, 2, 2, 2, 32), (1, 5280, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 10813440, "dback_ms": 6.57}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 64, 16), (4, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1219477504, "dback_ms": 40.93}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 32, 16), (3, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 457304064, "dback_ms": 20.51}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 154, 14), (3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1916804736, "dback_ms": 53.75}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 168, 12), (3, 7, 7, 7, 7, 1, 12, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1781273088, "dback_ms": 58.25}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 147, 14), (4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2439569664, "dback_ms": 72.61}
+{"op": "subtract", "sub": null, "shapes": "((1, 480, 512), (1, 480, 512))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 983040, "dback_ms": 0.72}
+{"op": "add", "sub": null, "shapes": "((1, 5056, 2, 2, 2, 2, 32), (1, 5056, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 10354688, "dback_ms": 6.09}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 31, 32), (7, 7, 7, 7, 1, 31, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -9527168, "dback_ms": -10.85}
+{"op": "add", "sub": null, "shapes": "((1, 4816, 2, 2, 2, 2, 32), (1, 4816, 2, 2, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -9863168, "dback_ms": -5.72}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 147, 14), (3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1829677248, "dback_ms": 54.73}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 140, 14), (4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2323399680, "dback_ms": 67.27}
+{"op": "add", "sub": null, "shapes": "((1, 3072, 2, 2, 2, 2, 32), (1, 3072, 2, 2, 2, 2, 32))", "n_a": 8, "n_b": 4, "d": -4, "dflop": -6291456, "dback_ms": -3.64}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 96, 16), (3, 7, 7, 7, 7, 1, 96, 16))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 44255232, "dback_ms": 72.25}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 32, 16), (4, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 609738752, "dback_ms": 40.33}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1024, 2, 2, 32), (7, 7, 1, 1024, 2, 2, 32))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 25690112, "dback_ms": 19.14}
+{"op": "add", "sub": null, "shapes": "((1, 4832, 2, 2, 2, 2, 32), (1, 4832, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 9895936, "dback_ms": 5.65}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2408, 2, 2, 2, 32), (7, 1, 2408, 2, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -17260544, "dback_ms": -15.74}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 120, 128), (7, 7, 1, 120, 128))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 3010560, "dback_ms": 2.65}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 256, 256), (7, 1, 256, 256))", "n_a": 72, "n_b": 76, "d": 4, "dflop": 1835008, "dback_ms": 0.79}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 602, 2, 32), (7, 7, 7, 1, 602, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -52860416, "dback_ms": -49.41}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 192, 32), (7, 7, 7, 7, 1, 192, 32))", "n_a": 9, "n_b": 5, "d": -4, "dflop": -59006976, "dback_ms": -61.41}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 161, 13), (4, 7, 7, 7, 7, 1, 13, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2473990400, "dback_ms": 78.81}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 30, 32), (7, 7, 7, 7, 1, 30, 32))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 9219840, "dback_ms": 10.8}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 256, 32), (7, 7, 7, 7, 1, 256, 32))", "n_a": 5, "n_b": 9, "d": 4, "dflop": 78675968, "dback_ms": 82.97}
+{"op": "add", "sub": null, "shapes": "((1, 4592, 2, 2, 2, 2, 32), (1, 4592, 2, 2, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -9404416, "dback_ms": -5.24}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1208, 2, 2, 32), (7, 7, 1, 1208, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 30306304, "dback_ms": 23.13}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 165, 12), (4, 7, 7, 7, 7, 1, 12, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2332619520, "dback_ms": 81.88}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 151, 14), (4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2505952512, "dback_ms": 71.05}
+{"op": "subtract", "sub": null, "shapes": "((1, 464, 512), (1, 464, 512))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -950272, "dback_ms": -0.63}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2304, 2, 2, 2, 32), (7, 1, 2304, 2, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 16515072, "dback_ms": 14.64}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 62, 64), (7, 7, 7, 1, 62, 64))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -5444096, "dback_ms": -5.18}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1148, 2, 2, 32), (7, 7, 1, 1148, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -28801024, "dback_ms": -22.52}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 158, 13), (4, 7, 7, 7, 7, 1, 13, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2427891200, "dback_ms": 76.9}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 128, 128), (7, 7, 1, 128, 128))", "n_a": 72, "n_b": 76, "d": 4, "dflop": 3211264, "dback_ms": 1.83}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 128, 15), (3, 7, 7, 7, 7, 1, 15, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1711202304, "dback_ms": 47.17}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 60, 64), (7, 7, 7, 1, 60, 64))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 5268480, "dback_ms": 4.95}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 134, 15), (3, 7, 7, 7, 7, 1, 15, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1791414912, "dback_ms": 48.14}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2520, 2, 2, 2, 32), (7, 1, 2520, 2, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -18063360, "dback_ms": -16.13}
+{"op": "add", "sub": null, "shapes": "((1, 5040, 2, 2, 2, 2, 32), (1, 5040, 2, 2, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -10321920, "dback_ms": -5.94}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 151, 14), (3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1879464384, "dback_ms": 52.87}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 32, 16), (4, 7, 7, 7, 7, 1, 32, 16))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 19668992, "dback_ms": 41.02}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 29, 32), (7, 7, 7, 7, 1, 29, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -8912512, "dback_ms": -10.34}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 158, 13), (3, 7, 7, 7, 7, 1, 13, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1820918400, "dback_ms": 57.68}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1316, 2, 2, 32), (7, 7, 1, 1316, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -33015808, "dback_ms": -26.54}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2640, 2, 2, 2, 32), (7, 1, 2640, 2, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 18923520, "dback_ms": 17.24}
+{"op": "subtract", "sub": null, "shapes": "((1, 496, 512), (1, 496, 512))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -1015808, "dback_ms": -0.6}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 301, 32), (7, 7, 7, 7, 1, 301, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -92505728, "dback_ms": -100.12}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 302, 32), (7, 7, 7, 7, 1, 302, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 92813056, "dback_ms": 94.99}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 64, 64), (7, 7, 7, 1, 64, 64))", "n_a": 12, "n_b": 16, "d": 4, "dflop": 5619712, "dback_ms": 4.9}
+{"op": "add", "sub": null, "shapes": "((1, 4608, 2, 2, 2, 2, 32), (1, 4608, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 9437184, "dback_ms": 5.27}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1152, 2, 2, 32), (7, 7, 1, 1152, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 28901376, "dback_ms": 21.93}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 134, 15), (4, 7, 7, 7, 7, 1, 15, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2388553216, "dback_ms": 64.77}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2416, 2, 2, 2, 32), (7, 1, 2416, 2, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 17317888, "dback_ms": 15.61}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 329, 32), (7, 7, 7, 7, 1, 329, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -101110912, "dback_ms": -104.09}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1260, 2, 2, 32), (7, 7, 1, 1260, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -31610880, "dback_ms": -24.84}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 96, 16), (4, 7, 7, 7, 7, 1, 96, 16))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 59006976, "dback_ms": 97.52}
+{"op": "add", "sub": null, "shapes": "((7, 1, 1536, 2, 2, 2, 32), (7, 1, 1536, 2, 2, 2, 32))", "n_a": 8, "n_b": 4, "d": -4, "dflop": -11010048, "dback_ms": -9.93}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2632, 2, 2, 2, 32), (7, 1, 2632, 2, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -18866176, "dback_ms": -17.19}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 315, 32), (7, 7, 7, 7, 1, 315, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -96808320, "dback_ms": -99.24}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 384, 2, 32), (7, 7, 7, 1, 384, 2, 32))", "n_a": 8, "n_b": 4, "d": -4, "dflop": -33718272, "dback_ms": -28.94}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 165, 12), (3, 7, 7, 7, 7, 1, 12, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1749464640, "dback_ms": 60.5}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 32, 16), (3, 7, 7, 7, 7, 1, 32, 16))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 14751744, "dback_ms": 29.77}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 632, 2, 32), (7, 7, 7, 1, 632, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 55494656, "dback_ms": 48.27}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 240, 256), (7, 1, 240, 256))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 1720320, "dback_ms": 1.09}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 64, 16), (3, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 914608128, "dback_ms": 30.32}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 64, 16), (4, 7, 7, 7, 7, 1, 64, 16))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 39337984, "dback_ms": 69.93}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 144, 14), (3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1792336896, "dback_ms": 51.23}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1320, 2, 2, 32), (7, 7, 1, 1320, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 33116160, "dback_ms": 25.94}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 287, 32), (7, 7, 7, 7, 1, 287, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -88203136, "dback_ms": -91.73}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 144, 14), (4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2389782528, "dback_ms": 67.53}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 124, 128), (7, 7, 1, 124, 128))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -3110912, "dback_ms": -2.51}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 660, 2, 32), (7, 7, 7, 1, 660, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 57953280, "dback_ms": 52.12}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 248, 256), (7, 1, 248, 256))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -1777664, "dback_ms": -1.2}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 64, 32), (7, 7, 7, 7, 1, 64, 32))", "n_a": 56, "n_b": 52, "d": -4, "dflop": -19668992, "dback_ms": -29.82}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 658, 2, 32), (7, 7, 7, 1, 658, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -57777664, "dback_ms": -51.56}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 768, 2, 2, 32), (7, 7, 1, 768, 2, 2, 32))", "n_a": 8, "n_b": 4, "d": -4, "dflop": -19267584, "dback_ms": -14.96}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 161, 13), (3, 7, 7, 7, 7, 1, 13, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1855492800, "dback_ms": 59.17}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2296, 2, 2, 2, 32), (7, 1, 2296, 2, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -16457728, "dback_ms": -14.71}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 288, 32), (7, 7, 7, 7, 1, 288, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 88510464, "dback_ms": 91.12}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 630, 2, 32), (7, 7, 7, 1, 630, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -55319040, "dback_ms": -48.7}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1204, 2, 2, 32), (7, 7, 1, 1204, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -30205952, "dback_ms": -24.02}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 330, 32), (7, 7, 7, 7, 1, 330, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 101418240, "dback_ms": 103.8}
+{"op": "add", "sub": null, "shapes": "((1, 5264, 2, 2, 2, 2, 32), (1, 5264, 2, 2, 2, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -10780672, "dback_ms": -6.41}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 64, 16), (3, 7, 7, 7, 7, 1, 64, 16))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 29503488, "dback_ms": 52.63}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 574, 2, 32), (7, 7, 7, 1, 574, 2, 32))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -50401792, "dback_ms": -44.93}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((3, 7, 7, 7, 7, 1, 128, 16), (3, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 1829216256, "dback_ms": 51.07}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 168, 12), (4, 7, 7, 7, 7, 1, 12, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2375030784, "dback_ms": 79.86}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2528, 2, 2, 2, 32), (7, 1, 2528, 2, 2, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 18120704, "dback_ms": 16.45}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 512, 2, 32), (7, 7, 7, 1, 512, 2, 32))", "n_a": 4, "n_b": 8, "d": 4, "dflop": 44957696, "dback_ms": 40.13}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 576, 2, 32), (7, 7, 7, 1, 576, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 50577408, "dback_ms": 44.86}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 604, 2, 32), (7, 7, 7, 1, 604, 2, 32))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 53036032, "dback_ms": 46.64}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 58, 64), (7, 7, 7, 1, 58, 64))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -5092864, "dback_ms": -5.14}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 154, 14), (4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 4, "d": 4, "dflop": 2555739648, "dback_ms": 72.85}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 116, 128), (7, 7, 1, 116, 128))", "n_a": 4, "n_b": 0, "d": -4, "dflop": -2910208, "dback_ms": -2.58}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 308, 28), (7, 7, 7, 7, 1, 308, 28))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 62118672, "dback_ms": 76.45}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 280, 28), (7, 7, 7, 7, 1, 28, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3549638400, "dback_ms": -63.79}
+{"op": "subtract", "sub": null, "shapes": "((1, 4928, 432), (1, 4928, 432))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -6386688, "dback_ms": -5.68}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 140, 14), (3, 7, 7, 7, 7, 1, 140, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 42353640, "dback_ms": 69.53}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 602, 54), (7, 7, 7, 1, 602, 54))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -33450732, "dback_ms": -39.06}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 588, 56), (7, 7, 7, 1, 588, 56))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 33882912, "dback_ms": 35.6}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 168, 12), (3, 7, 7, 7, 7, 1, 168, 12))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 43563744, "dback_ms": 79.79}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 144, 14), (3, 7, 7, 7, 7, 1, 144, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 43563744, "dback_ms": 69.5}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1204, 108), (7, 7, 1, 1204, 108))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -19114704, "dback_ms": -20.61}
+{"op": "subtract", "sub": null, "shapes": "((1, 5056, 416), (1, 5056, 416))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 6309888, "dback_ms": 5.52}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 64, 32), (7, 7, 7, 7, 1, 64, 32))", "n_a": 41, "n_b": 38, "d": -3, "dflop": -14751744, "dback_ms": -15.5}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2520, 200), (7, 1, 2520, 200))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -10584000, "dback_ms": -10.47}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 268, 29), (7, 7, 7, 7, 1, 29, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3521056896, "dback_ms": -60.22}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 147, 14), (3, 7, 7, 7, 7, 1, 147, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 44471322, "dback_ms": 76.28}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 588, 54), (7, 7, 7, 1, 588, 54))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -32672808, "dback_ms": -35.65}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 154, 14), (4, 7, 7, 7, 7, 1, 154, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 62118672, "dback_ms": 100.55}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 288, 28), (7, 7, 7, 7, 1, 288, 28))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 58084992, "dback_ms": 74.0}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 630, 50), (7, 7, 7, 1, 630, 50))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -32413500, "dback_ms": -38.22}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 134, 15), (3, 7, 7, 7, 7, 1, 134, 15))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 43434090, "dback_ms": 70.12}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 256, 128), (7, 7, 1, 256, 128))", "n_a": 43, "n_b": 40, "d": -3, "dflop": -4816896, "dback_ms": -5.7}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1288, 104), (7, 7, 1, 1288, 104))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 19690944, "dback_ms": 20.32}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 316, 26), (7, 7, 7, 7, 1, 316, 26))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 59179848, "dback_ms": 78.12}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 616, 56), (7, 7, 7, 1, 616, 56))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 35496384, "dback_ms": 38.29}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 294, 27), (7, 7, 7, 7, 1, 27, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3591588672, "dback_ms": -63.16}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2528, 208), (7, 1, 2528, 208))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 11042304, "dback_ms": 10.76}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 644, 52), (7, 7, 7, 1, 644, 52))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 34459152, "dback_ms": 37.92}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2464, 216), (7, 1, 2464, 216))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -11176704, "dback_ms": -12.51}
+{"op": "subtract", "sub": null, "shapes": "((1, 3072, 496), (1, 3072, 496))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -4571136, "dback_ms": -3.62}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 147, 14), (4, 7, 7, 7, 7, 1, 147, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 59295096, "dback_ms": 98.44}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1316, 96), (7, 7, 1, 1316, 96))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -18571392, "dback_ms": -21.76}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 192, 32), (7, 7, 7, 7, 1, 32, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -2788079616, "dback_ms": -44.55}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1260, 100), (7, 7, 1, 1260, 100))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -18522000, "dback_ms": -20.38}
+{"op": "subtract", "sub": null, "shapes": "((1, 5040, 400), (1, 5040, 400))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -6048000, "dback_ms": -5.53}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 660, 48), (7, 7, 7, 1, 660, 48))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 32598720, "dback_ms": 39.29}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2352, 216), (7, 1, 2352, 216))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -10668672, "dback_ms": -11.08}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1264, 104), (7, 7, 1, 1264, 104))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 19324032, "dback_ms": 20.43}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 1536, 248), (7, 1, 1536, 248))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -7999488, "dback_ms": -7.3}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 616, 54), (7, 7, 7, 1, 616, 54))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -34228656, "dback_ms": -39.82}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 151, 14), (3, 7, 7, 7, 7, 1, 151, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 45681426, "dback_ms": 74.33}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 644, 50), (7, 7, 7, 1, 644, 50))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -33133800, "dback_ms": -37.92}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 151, 14), (4, 7, 7, 7, 7, 1, 151, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 60908568, "dback_ms": 97.69}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2408, 216), (7, 1, 2408, 216))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -10922688, "dback_ms": -12.25}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2352, 224), (7, 1, 2352, 224))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 11063808, "dback_ms": 10.94}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2144, 232), (7, 1, 2144, 232))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -10445568, "dback_ms": -10.32}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 536, 60), (7, 7, 7, 1, 536, 60))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 33092640, "dback_ms": 32.7}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1176, 108), (7, 7, 1, 1176, 108))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -18670176, "dback_ms": -19.0}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 329, 24), (7, 7, 7, 7, 1, 329, 24))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -56874888, "dback_ms": -79.89}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1024, 128), (7, 7, 1, 1024, 128))", "n_a": 4, "n_b": 7, "d": 3, "dflop": 19267584, "dback_ms": 8.18}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 574, 56), (7, 7, 7, 1, 574, 56))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -33076176, "dback_ms": -34.73}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 165, 12), (3, 7, 7, 7, 7, 1, 165, 12))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 42785820, "dback_ms": 81.0}
+{"op": "subtract", "sub": null, "shapes": "((1, 4288, 464), (1, 4288, 464))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -5968896, "dback_ms": -4.93}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 128, 15), (3, 7, 7, 7, 7, 1, 128, 15))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 41489280, "dback_ms": 65.91}
+{"op": "subtract", "sub": null, "shapes": "((1, 5152, 416), (1, 5152, 416))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 6429696, "dback_ms": 5.7}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1072, 116), (7, 7, 1, 1072, 116))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -18279744, "dback_ms": -18.12}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2464, 224), (7, 1, 2464, 224))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 11590656, "dback_ms": 11.71}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 168, 12), (4, 7, 7, 7, 7, 1, 168, 12))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 58084992, "dback_ms": 105.55}
+{"op": "subtract", "sub": null, "shapes": "((1, 4592, 448), (1, 4592, 448))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -6171648, "dback_ms": -5.34}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 256, 30), (7, 7, 7, 7, 1, 30, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3481411584, "dback_ms": -63.67}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2416, 224), (7, 1, 2416, 224))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 11364864, "dback_ms": 11.19}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 161, 13), (4, 7, 7, 7, 7, 1, 161, 13))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 60303516, "dback_ms": 103.61}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 140, 14), (4, 7, 7, 7, 7, 1, 140, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 56471520, "dback_ms": 92.99}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 144, 14), (4, 7, 7, 7, 7, 1, 144, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 58084992, "dback_ms": 95.63}
+{"op": "subtract", "sub": null, "shapes": "((1, 5152, 400), (1, 5152, 400))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -6182400, "dback_ms": -5.38}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 158, 13), (4, 7, 7, 7, 7, 1, 158, 13))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 59179848, "dback_ms": 103.84}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 154, 14), (3, 7, 7, 7, 7, 1, 154, 14))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 46589004, "dback_ms": 74.17}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 268, 30), (7, 7, 7, 7, 1, 268, 30))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 57912120, "dback_ms": 72.29}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 287, 28), (7, 7, 7, 7, 1, 28, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3638379360, "dback_ms": -61.96}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 128, 64), (7, 7, 7, 1, 128, 64))", "n_a": 43, "n_b": 40, "d": -3, "dflop": -8429568, "dback_ms": -6.07}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 128, 32), (7, 7, 7, 7, 1, 32, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -1858719744, "dback_ms": -31.98}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 301, 27), (7, 7, 7, 7, 1, 27, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3677102688, "dback_ms": -69.02}
+{"op": "subtract", "sub": null, "shapes": "((1, 4704, 448), (1, 4704, 448))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 6322176, "dback_ms": 5.24}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 512, 64), (7, 7, 7, 1, 512, 64))", "n_a": 4, "n_b": 7, "d": 3, "dflop": 33718272, "dback_ms": 29.54}
+{"op": "subtract", "sub": null, "shapes": "((1, 4288, 480), (1, 4288, 480))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 6174720, "dback_ms": 5.12}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 322, 25), (7, 7, 7, 7, 1, 25, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3636765888, "dback_ms": -69.66}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 302, 28), (7, 7, 7, 7, 1, 302, 28))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 60908568, "dback_ms": 76.03}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1232, 108), (7, 7, 1, 1232, 108))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -19559232, "dback_ms": -20.15}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 165, 12), (4, 7, 7, 7, 7, 1, 165, 12))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 57047760, "dback_ms": 109.64}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2144, 240), (7, 1, 2144, 240))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 10805760, "dback_ms": 10.19}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1320, 96), (7, 7, 1, 1320, 96))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 18627840, "dback_ms": 21.23}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 308, 27), (7, 7, 7, 7, 1, 308, 27))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -59900148, "dback_ms": -76.29}
+{"op": "subtract", "sub": null, "shapes": "((1, 5264, 384), (1, 5264, 384))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -6064128, "dback_ms": -5.39}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 322, 25), (7, 7, 7, 7, 1, 322, 25))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -57984150, "dback_ms": -78.31}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 330, 24), (7, 7, 7, 7, 1, 330, 24))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 57047760, "dback_ms": 81.43}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 308, 27), (7, 7, 7, 7, 1, 27, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3762616704, "dback_ms": -66.54}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1232, 112), (7, 7, 1, 1232, 112))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 20283648, "dback_ms": 20.17}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1148, 112), (7, 7, 1, 1148, 112))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -18900672, "dback_ms": -18.85}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 315, 25), (7, 7, 7, 7, 1, 315, 25))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -56723625, "dback_ms": -77.8}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 128, 15), (4, 7, 7, 7, 7, 1, 128, 15))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 55319040, "dback_ms": 88.4}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1152, 112), (7, 7, 1, 1152, 112))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 18966528, "dback_ms": 19.0}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2296, 224), (7, 1, 2296, 224))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -10800384, "dback_ms": -10.67}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2048, 256), (7, 1, 2048, 256))", "n_a": 4, "n_b": 7, "d": 3, "dflop": 11010048, "dback_ms": 8.15}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 192, 31), (7, 7, 7, 7, 1, 31, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -2699569152, "dback_ms": -47.78}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 301, 27), (7, 7, 7, 7, 1, 301, 27))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -58538781, "dback_ms": -77.83}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2304, 224), (7, 1, 2304, 224))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 10838016, "dback_ms": 10.92}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 384, 62), (7, 7, 7, 1, 384, 62))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -24498432, "dback_ms": -23.86}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 336, 24), (7, 7, 7, 7, 1, 24, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3639992832, "dback_ms": -72.02}
+{"op": "subtract", "sub": null, "shapes": "((1, 4816, 432), (1, 4816, 432))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -6241536, "dback_ms": -5.87}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 294, 27), (7, 7, 7, 7, 1, 294, 27))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -57177414, "dback_ms": -73.32}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 768, 124), (7, 7, 1, 768, 124))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -13999104, "dback_ms": -12.43}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 134, 15), (4, 7, 7, 7, 7, 1, 134, 15))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 57912120, "dback_ms": 92.26}
+{"op": "subtract", "sub": null, "shapes": "((1, 1024, 512), (1, 1024, 512))", "n_a": 43, "n_b": 40, "d": -3, "dflop": -1572864, "dback_ms": -1.09}
+{"op": "subtract", "sub": null, "shapes": "((1, 4704, 432), (1, 4704, 432))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -6096384, "dback_ms": -5.25}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1072, 120), (7, 7, 1, 1072, 120))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 18910080, "dback_ms": 18.45}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 322, 26), (7, 7, 7, 7, 1, 322, 26))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 60303516, "dback_ms": 78.85}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 158, 13), (3, 7, 7, 7, 7, 1, 158, 13))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 44384886, "dback_ms": 79.28}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 329, 24), (7, 7, 7, 7, 1, 24, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3564159648, "dback_ms": -71.14}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2576, 200), (7, 1, 2576, 200))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -10819200, "dback_ms": -10.39}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2632, 192), (7, 1, 2632, 192))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -10612224, "dback_ms": -11.34}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 294, 28), (7, 7, 7, 7, 1, 294, 28))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 59295096, "dback_ms": 78.22}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 287, 28), (7, 7, 7, 7, 1, 287, 28))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -57883308, "dback_ms": -71.89}
+{"op": "subtract", "sub": null, "shapes": "((1, 4096, 512), (1, 4096, 512))", "n_a": 4, "n_b": 7, "d": 3, "dflop": 6291456, "dback_ms": 3.62}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2640, 192), (7, 1, 2640, 192))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 10644480, "dback_ms": 10.62}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2576, 208), (7, 1, 2576, 208))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 11251968, "dback_ms": 10.76}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1176, 112), (7, 7, 1, 1176, 112))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 19361664, "dback_ms": 19.73}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1208, 112), (7, 7, 1, 1208, 112))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 19888512, "dback_ms": 20.74}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 192, 31), (7, 7, 7, 7, 1, 192, 31))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -42872256, "dback_ms": -52.91}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 512, 256), (7, 1, 512, 256))", "n_a": 43, "n_b": 40, "d": -3, "dflop": -2752512, "dback_ms": -0.71}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1288, 100), (7, 7, 1, 1288, 100))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -18933600, "dback_ms": -20.92}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 536, 58), (7, 7, 7, 1, 536, 58))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -31989552, "dback_ms": -32.98}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 658, 48), (7, 7, 7, 1, 658, 48))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -32499936, "dback_ms": -38.98}
+{"op": "matmul", "sub": "cdefgij,cdefgjk->cdefgik", "shapes": "((7, 7, 7, 7, 1, 315, 25), (7, 7, 7, 7, 1, 25, 32))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -3557705760, "dback_ms": -66.22}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 576, 56), (7, 7, 7, 1, 576, 56))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 33191424, "dback_ms": 34.78}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 604, 56), (7, 7, 7, 1, 604, 56))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 34804896, "dback_ms": 36.17}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 632, 52), (7, 7, 7, 1, 632, 52))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 33817056, "dback_ms": 37.84}
+{"op": "subtract", "sub": null, "shapes": "((1, 4608, 448), (1, 4608, 448))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 6193152, "dback_ms": 5.22}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 161, 13), (3, 7, 7, 7, 7, 1, 161, 13))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 45227637, "dback_ms": 78.78}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 268, 29), (7, 7, 7, 7, 1, 268, 29))", "n_a": 3, "n_b": 0, "d": -3, "dflop": -55981716, "dback_ms": -72.45}
+{"op": "subtract", "sub": null, "shapes": "((1, 4832, 448), (1, 4832, 448))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 6494208, "dback_ms": 5.85}
+{"op": "subtract", "sub": null, "shapes": "((1, 4928, 448), (1, 4928, 448))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 6623232, "dback_ms": 6.4}
+{"op": "subtract", "sub": null, "shapes": "((1, 5280, 384), (1, 5280, 384))", "n_a": 0, "n_b": 3, "d": 3, "dflop": 6082560, "dback_ms": 5.5}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 2, 2, 64, 2, 2, 32), (7, 7, 1, 2, 2, 64, 2, 2, 32))", "n_a": 24, "n_b": 22, "d": -2, "dflop": -3211264, "dback_ms": -0.95}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2, 2, 2, 32, 2, 2, 2, 32), (7, 1, 2, 2, 2, 32, 2, 2, 2, 32))", "n_a": 24, "n_b": 22, "d": -2, "dflop": -917504, "dback_ms": -0.22}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 2, 64, 2, 32), (7, 7, 7, 1, 2, 64, 2, 32))", "n_a": 24, "n_b": 22, "d": -2, "dflop": -5619712, "dback_ms": -3.93}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 2, 2, 32, 2, 2, 32), (7, 7, 1, 2, 2, 32, 2, 2, 32))", "n_a": 24, "n_b": 22, "d": -2, "dflop": -1605632, "dback_ms": -0.82}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 2, 32, 2, 32), (7, 7, 7, 1, 2, 32, 2, 32))", "n_a": 24, "n_b": 22, "d": -2, "dflop": -2809856, "dback_ms": -1.41}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 32, 32), (7, 7, 7, 7, 1, 32, 32))", "n_a": 36, "n_b": 38, "d": 2, "dflop": 4917248, "dback_ms": 5.15}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 64, 32), (4, 7, 7, 7, 7, 1, 32, 32))", "n_a": 13, "n_b": 11, "d": -2, "dflop": -2478292992, "dback_ms": -34.46}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2, 2, 2, 64, 2, 2, 2, 32), (7, 1, 2, 2, 2, 64, 2, 2, 2, 32))", "n_a": 24, "n_b": 22, "d": -2, "dflop": -1835008, "dback_ms": -1.11}
+{"op": "take", "sub": null, "shapes": "()", "n_a": 24, "n_b": 22, "d": -2, "dflop": -20733952, "dback_ms": -12.05}
+{"op": "add", "sub": null, "shapes": "((1, 2, 2, 2, 2, 64, 2, 2, 2, 2, 32), (1, 2, 2, 2, 2, 64, 2, 2, 2, 2, 32))", "n_a": 24, "n_b": 22, "d": -2, "dflop": -1048576, "dback_ms": -0.98}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 315, 25), (7, 7, 7, 7, 1, 315, 25))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -18907875, "dback_ms": -24.67}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 128, 15), (4, 7, 7, 7, 7, 1, 128, 15))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 18439680, "dback_ms": 23.11}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1208, 2, 2, 32), (7, 7, 1, 1208, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 7576576, "dback_ms": 4.88}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2304, 2, 2, 2, 32), (7, 1, 2304, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 4128768, "dback_ms": 2.89}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1152, 112), (7, 7, 1, 1152, 112))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 6322176, "dback_ms": 5.93}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2296, 224), (7, 1, 2296, 224))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3600128, "dback_ms": -3.37}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2048, 256), (7, 1, 2048, 256))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 3670016, "dback_ms": 2.94}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 315, 1, 32), (7, 7, 7, 7, 1, 315, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -48404160, "dback_ms": -38.33}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 147, 14), (3, 3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1372257936, "dback_ms": 29.31}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 151, 16), (3, 7, 7, 7, 7, 1, 151, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 17402448, "dback_ms": 23.03}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1148, 2, 2, 32), (7, 7, 1, 1148, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -7200256, "dback_ms": -4.76}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 154, 14), (3, 3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1437603552, "dback_ms": 28.76}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 301, 27), (7, 7, 7, 7, 1, 301, 27))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -19512927, "dback_ms": -22.67}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 384, 1, 2, 32), (7, 7, 7, 1, 384, 2, 2, 32))", "n_a": 2, "n_b": 1, "d": -1, "dflop": -16859136, "dback_ms": -14.72}
+{"op": "subtract", "sub": null, "shapes": "((1, 4096, 2, 2, 2, 2, 32), (1, 4096, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 2, "d": 1, "dflop": 2097152, "dback_ms": 1.14}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2304, 224), (7, 1, 2304, 224))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 3612672, "dback_ms": 3.26}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1260, 1, 2, 2, 32), (7, 7, 1, 1260, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -15805440, "dback_ms": -10.68}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 384, 62), (7, 7, 7, 1, 384, 62))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -8166144, "dback_ms": -7.52}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1320, 1, 2, 2, 32), (7, 7, 1, 1320, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 16558080, "dback_ms": 10.92}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 256, 1, 32), (7, 7, 7, 7, 1, 256, 2, 32))", "n_a": 1, "n_b": 2, "d": 1, "dflop": 39337984, "dback_ms": 31.19}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1152, 1, 2, 2, 32), (7, 7, 1, 1152, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 14450688, "dback_ms": 9.87}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 308, 27), (4, 7, 7, 7, 7, 1, 27, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -5016822272, "dback_ms": -45.52}
+{"op": "subtract", "sub": null, "shapes": "((2, 7, 7, 1, 2, 2, 32, 2, 2, 32), (2, 7, 7, 1, 2, 2, 32, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -1605632, "dback_ms": -1.44}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2296, 1, 2, 2, 2, 32), (7, 1, 2296, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -8228864, "dback_ms": -6.88}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 658, 1, 2, 32), (7, 7, 7, 1, 658, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -28888832, "dback_ms": -24.97}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2520, 2, 2, 2, 32), (7, 1, 2520, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4515840, "dback_ms": -3.15}
+{"op": "add", "sub": null, "shapes": "((1, 4816, 432), (1, 4816, 432))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2080512, "dback_ms": -1.89}
+{"op": "subtract", "sub": null, "shapes": "((1, 5040, 2, 2, 2, 2, 32), (1, 5040, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2580480, "dback_ms": -1.33}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 294, 27), (7, 7, 7, 7, 1, 294, 27))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -19059138, "dback_ms": -21.6}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 768, 124), (7, 7, 1, 768, 124))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4666368, "dback_ms": -4.12}
+{"op": "reshape", "sub": null, "shapes": "((12907776,),)", "n_a": 3, "n_b": 4, "d": 1, "dflop": 12907776, "dback_ms": 0.0}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 134, 15), (4, 7, 7, 7, 7, 1, 134, 15))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19304040, "dback_ms": 24.83}
+{"op": "add", "sub": null, "shapes": "((1, 5280, 1, 2, 2, 2, 2, 32), (1, 5280, 2, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 5406720, "dback_ms": 3.99}
+{"op": "add", "sub": null, "shapes": "((1, 4704, 432), (1, 4704, 432))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2032128, "dback_ms": -1.79}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 128, 15), (3, 4, 7, 7, 7, 7, 1, 15, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1711202304, "dback_ms": 34.63}
+{"op": "subtract", "sub": null, "shapes": "((1, 5280, 2, 2, 2, 2, 32), (1, 5280, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2703360, "dback_ms": 1.72}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1072, 120), (7, 7, 1, 1072, 120))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 6303360, "dback_ms": 5.87}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 322, 26), (7, 7, 7, 7, 1, 322, 26))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 20101172, "dback_ms": 23.52}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 64, 16), (3, 3, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 685956096, "dback_ms": 17.16}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 574, 1, 2, 32), (7, 7, 7, 1, 574, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -25200896, "dback_ms": -22.4}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 140, 16), (3, 7, 7, 7, 7, 1, 140, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 16134720, "dback_ms": 21.15}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 158, 13), (3, 7, 7, 7, 7, 1, 158, 13))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 14794962, "dback_ms": 21.26}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 1, 2, 64, 2, 32), (7, 7, 7, 1, 2, 2, 64, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -5619712, "dback_ms": -8.8}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2576, 200), (7, 1, 2576, 200))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3606400, "dback_ms": -3.65}
+{"op": "add", "sub": null, "shapes": "((1, 4608, 1, 2, 2, 2, 2, 32), (1, 4608, 2, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 4718592, "dback_ms": 3.48}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1316, 2, 2, 32), (7, 7, 1, 1316, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -8253952, "dback_ms": -5.68}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 2, 2, 2, 64, 2, 2, 32), (7, 7, 1, 2, 2, 2, 64, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -3211264, "dback_ms": -3.75}
+{"op": "add", "sub": null, "shapes": "((1, 2, 2, 2, 2, 2, 64, 2, 2, 2, 2, 32), (1, 2, 2, 2, 2, 2, 64, 2, 2, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -1048576, "dback_ms": -1.53}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 158, 16), (3, 7, 7, 7, 7, 1, 158, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 18209184, "dback_ms": 22.07}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2632, 192), (7, 1, 2632, 192))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3537408, "dback_ms": -3.51}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 294, 28), (7, 7, 7, 7, 1, 294, 28))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19765032, "dback_ms": 21.28}
+{"op": "subtract", "sub": null, "shapes": "((2, 7, 1, 2, 2, 2, 32, 2, 2, 2, 32), (2, 7, 1, 2, 2, 2, 32, 2, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -917504, "dback_ms": -1.04}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 630, 50), (7, 7, 7, 1, 630, 50))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -10804500, "dback_ms": -11.98}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 287, 28), (7, 7, 7, 7, 1, 287, 28))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -19294436, "dback_ms": -20.13}
+{"op": "add", "sub": null, "shapes": "((1, 4096, 512), (1, 4096, 512))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2097152, "dback_ms": 1.58}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2640, 2, 2, 2, 32), (7, 1, 2640, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 4730880, "dback_ms": 3.18}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2640, 192), (7, 1, 2640, 192))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 3548160, "dback_ms": 3.4}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1176, 112), (7, 7, 1, 1176, 112))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 6453888, "dback_ms": 6.04}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1208, 112), (7, 7, 1, 1208, 112))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 6629504, "dback_ms": 6.4}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 154, 14), (3, 4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1916804736, "dback_ms": 38.54}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 192, 31), (7, 7, 7, 7, 1, 192, 31))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -14290752, "dback_ms": -15.24}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2048, 1, 2, 2, 2, 32), (7, 1, 2048, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 2, "d": 1, "dflop": 7340032, "dback_ms": 6.22}
+{"op": "add", "sub": null, "shapes": "((7, 1, 512, 256), (7, 1, 512, 256))", "n_a": 13, "n_b": 12, "d": -1, "dflop": -917504, "dback_ms": -0.43}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 301, 32), (7, 7, 7, 7, 1, 301, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -23126432, "dback_ms": -22.72}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 128, 16), (3, 3, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1371912192, "dback_ms": 25.7}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 302, 32), (7, 7, 7, 7, 1, 302, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 23203264, "dback_ms": 22.01}
+{"op": "reshape", "sub": null, "shapes": "((122931200,),)", "n_a": 2, "n_b": 3, "d": 1, "dflop": 122931200, "dback_ms": 0.0}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 536, 58), (7, 7, 7, 1, 536, 58))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -10663184, "dback_ms": -10.59}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 658, 48), (7, 7, 7, 1, 658, 48))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -10833312, "dback_ms": -12.98}
+{"op": "subtract", "sub": null, "shapes": "((1, 4608, 2, 2, 2, 2, 32), (1, 4608, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2359296, "dback_ms": 1.2}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2632, 1, 2, 2, 2, 32), (7, 1, 2632, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -9433088, "dback_ms": -7.76}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2464, 216), (7, 1, 2464, 216))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3725568, "dback_ms": -3.6}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1152, 2, 2, 32), (7, 7, 1, 1152, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 7225344, "dback_ms": 4.54}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 576, 56), (7, 7, 7, 1, 576, 56))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 11063808, "dback_ms": 11.26}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 604, 56), (7, 7, 7, 1, 604, 56))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 11601632, "dback_ms": 11.41}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 2, 64, 2, 32), (7, 7, 7, 1, 2, 64, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -2809856, "dback_ms": -2.74}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2416, 2, 2, 2, 32), (7, 1, 2416, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 4329472, "dback_ms": 3.05}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 134, 16), (4, 7, 7, 7, 7, 1, 134, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 20590976, "dback_ms": 27.2}
+{"op": "reshape", "sub": null, "shapes": "((181784512,),)", "n_a": 0, "n_b": 1, "d": 1, "dflop": 181784512, "dback_ms": 0.01}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2408, 2, 2, 2, 32), (7, 1, 2408, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4315136, "dback_ms": -3.0}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 134, 15), (3, 3, 7, 7, 7, 7, 1, 15, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1343561184, "dback_ms": 26.13}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 329, 32), (7, 7, 7, 7, 1, 329, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -25277728, "dback_ms": -24.03}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 161, 16), (3, 7, 7, 7, 7, 1, 161, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 18554928, "dback_ms": 23.11}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1260, 2, 2, 32), (7, 7, 1, 1260, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -7902720, "dback_ms": -5.33}
+{"op": "add", "sub": null, "shapes": "((1, 4608, 448), (1, 4608, 448))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2064384, "dback_ms": 1.63}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 154, 16), (4, 7, 7, 7, 7, 1, 154, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 23664256, "dback_ms": 30.73}
+{"op": "add", "sub": null, "shapes": "((7, 1, 1, 2, 2, 2, 64, 2, 2, 2, 32), (7, 1, 2, 2, 2, 2, 64, 2, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -1835008, "dback_ms": -2.16}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 1536, 2, 2, 2, 32), (7, 1, 1536, 2, 2, 2, 32))", "n_a": 2, "n_b": 1, "d": -1, "dflop": -2752512, "dback_ms": -2.03}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 161, 13), (3, 7, 7, 7, 7, 1, 161, 13))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 15075879, "dback_ms": 20.64}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 192, 32), (4, 7, 7, 7, 7, 1, 32, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3717439488, "dback_ms": -37.07}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 287, 28), (4, 7, 7, 7, 7, 1, 28, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4851172480, "dback_ms": -44.2}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 2, 64, 32), (7, 7, 7, 7, 1, 2, 64, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -9834496, "dback_ms": -11.34}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2416, 1, 2, 2, 2, 32), (7, 1, 2416, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 8658944, "dback_ms": 7.16}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 280, 28), (4, 7, 7, 7, 7, 1, 28, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4732851200, "dback_ms": -43.67}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2632, 2, 2, 2, 32), (7, 1, 2632, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4716544, "dback_ms": -3.34}
+{"op": "add", "sub": null, "shapes": "((1, 4832, 448), (1, 4832, 448))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2164736, "dback_ms": 1.85}
+{"op": "subtract", "sub": null, "shapes": "((2, 7, 7, 7, 7, 1, 32, 32), (2, 7, 7, 7, 7, 1, 32, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -4917248, "dback_ms": -5.6}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 168, 12), (3, 3, 7, 7, 7, 7, 1, 12, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1335954816, "dback_ms": 24.42}
+{"op": "add", "sub": null, "shapes": "((1, 5280, 384), (1, 5280, 384))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2027520, "dback_ms": 1.54}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2408, 1, 2, 2, 2, 32), (7, 1, 2408, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -8630272, "dback_ms": -7.09}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 144, 14), (3, 3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1344252672, "dback_ms": 26.74}
+{"op": "add", "sub": null, "shapes": "((1, 5264, 1, 2, 2, 2, 2, 32), (1, 5264, 2, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -5390336, "dback_ms": -4.26}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 315, 32), (7, 7, 7, 7, 1, 315, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -24202080, "dback_ms": -23.3}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 384, 2, 32), (7, 7, 7, 1, 384, 2, 32))", "n_a": 2, "n_b": 1, "d": -1, "dflop": -8429568, "dback_ms": -6.29}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 151, 14), (4, 7, 7, 7, 7, 1, 151, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 20302856, "dback_ms": 25.45}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 128, 16), (3, 4, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1829216256, "dback_ms": 34.55}
+{"op": "add", "sub": null, "shapes": "((1, 4928, 432), (1, 4928, 432))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2128896, "dback_ms": -1.79}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2528, 1, 2, 2, 2, 32), (7, 1, 2528, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 9060352, "dback_ms": 7.41}
+{"op": "subtract", "sub": null, "shapes": "((1, 4592, 2, 2, 2, 2, 32), (1, 4592, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2351104, "dback_ms": -1.22}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 128, 15), (3, 3, 7, 7, 7, 7, 1, 15, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1283401728, "dback_ms": 25.84}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 288, 1, 32), (7, 7, 7, 7, 1, 288, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 44255232, "dback_ms": 35.21}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 140, 14), (3, 7, 7, 7, 7, 1, 140, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 14117880, "dback_ms": 18.22}
+{"op": "add", "sub": null, "shapes": "((1, 3072, 1, 2, 2, 2, 2, 32), (1, 3072, 2, 2, 2, 2, 2, 32))", "n_a": 2, "n_b": 1, "d": -1, "dflop": -3145728, "dback_ms": -2.23}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 128, 32), (4, 7, 7, 7, 7, 1, 32, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2478292992, "dback_ms": -30.1}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 632, 2, 32), (7, 7, 7, 1, 632, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 13873664, "dback_ms": 10.38}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 602, 54), (7, 7, 7, 1, 602, 54))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -11150244, "dback_ms": -12.19}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 588, 56), (7, 7, 7, 1, 588, 56))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 11294304, "dback_ms": 11.61}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 168, 12), (3, 7, 7, 7, 7, 1, 168, 12))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 14521248, "dback_ms": 22.37}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2, 2, 2, 64, 2, 2, 2, 32), (7, 1, 2, 2, 2, 64, 2, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -917504, "dback_ms": -1.12}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 630, 1, 2, 32), (7, 7, 7, 1, 630, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -27659520, "dback_ms": -24.07}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 144, 14), (3, 7, 7, 7, 7, 1, 144, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 14521248, "dback_ms": 18.62}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 165, 12), (3, 4, 7, 7, 7, 7, 1, 12, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1749464640, "dback_ms": 40.73}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1204, 108), (7, 7, 1, 1204, 108))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -6371568, "dback_ms": -6.58}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 128, 15), (3, 7, 7, 7, 7, 1, 128, 15))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 13829760, "dback_ms": 16.95}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 336, 24), (4, 7, 7, 7, 7, 1, 24, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4853323776, "dback_ms": -47.77}
+{"op": "add", "sub": null, "shapes": "((7, 1, 1536, 1, 2, 2, 2, 32), (7, 1, 1536, 2, 2, 2, 2, 32))", "n_a": 2, "n_b": 1, "d": -1, "dflop": -5505024, "dback_ms": -4.2}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 161, 13), (3, 4, 7, 7, 7, 7, 1, 13, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1855492800, "dback_ms": 39.54}
+{"op": "add", "sub": null, "shapes": "((1, 5056, 416), (1, 5056, 416))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2103296, "dback_ms": 1.68}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1320, 2, 2, 32), (7, 7, 1, 1320, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 8279040, "dback_ms": 5.32}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 301, 27), (4, 7, 7, 7, 7, 1, 27, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4902803584, "dback_ms": -48.54}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 287, 32), (7, 7, 7, 7, 1, 287, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -22050784, "dback_ms": -21.26}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2520, 200), (7, 1, 2520, 200))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3528000, "dback_ms": -3.37}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 147, 14), (3, 7, 7, 7, 7, 1, 147, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 14823774, "dback_ms": 19.53}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 134, 15), (3, 4, 7, 7, 7, 7, 1, 15, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1791414912, "dback_ms": 35.64}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2464, 224), (7, 1, 2464, 224))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 3863552, "dback_ms": 3.53}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1204, 1, 2, 2, 32), (7, 7, 1, 1204, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -15102976, "dback_ms": -10.84}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 134, 16), (3, 7, 7, 7, 7, 1, 134, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 15443232, "dback_ms": 20.64}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 588, 54), (7, 7, 7, 1, 588, 54))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -10890936, "dback_ms": -11.62}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 154, 14), (4, 7, 7, 7, 7, 1, 154, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 20706224, "dback_ms": 27.06}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 288, 28), (7, 7, 7, 7, 1, 288, 28))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19361664, "dback_ms": 21.01}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 140, 14), (3, 3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1306912320, "dback_ms": 26.56}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 660, 2, 32), (7, 7, 7, 1, 660, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 14488320, "dback_ms": 10.69}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 330, 1, 32), (7, 7, 7, 7, 1, 330, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 50709120, "dback_ms": 39.6}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1148, 1, 2, 2, 32), (7, 7, 1, 1148, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -14400512, "dback_ms": -9.58}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 134, 15), (3, 7, 7, 7, 7, 1, 134, 15))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 14478030, "dback_ms": 18.5}
+{"op": "subtract", "sub": null, "shapes": "((2, 7, 7, 7, 1, 2, 32, 2, 32), (2, 7, 7, 7, 1, 2, 32, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -2809856, "dback_ms": -3.63}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 256, 128), (7, 7, 1, 256, 128))", "n_a": 13, "n_b": 12, "d": -1, "dflop": -1605632, "dback_ms": -1.42}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1288, 104), (7, 7, 1, 1288, 104))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 6563648, "dback_ms": 6.49}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 316, 26), (7, 7, 7, 7, 1, 316, 26))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19726616, "dback_ms": 23.23}
+{"op": "add", "sub": null, "shapes": "((1, 4096, 1, 2, 2, 2, 2, 32), (1, 4096, 2, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 2, "d": 1, "dflop": 4194304, "dback_ms": 3.44}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 768, 2, 2, 32), (7, 7, 1, 768, 2, 2, 32))", "n_a": 2, "n_b": 1, "d": -1, "dflop": -4816896, "dback_ms": -3.15}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 144, 14), (4, 7, 7, 7, 7, 1, 144, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19361664, "dback_ms": 24.99}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 616, 56), (7, 7, 7, 1, 616, 56))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 11832128, "dback_ms": 12.19}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2520, 1, 2, 2, 2, 32), (7, 1, 2520, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -9031680, "dback_ms": -7.37}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2528, 208), (7, 1, 2528, 208))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 3680768, "dback_ms": 3.43}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 287, 1, 32), (7, 7, 7, 7, 1, 287, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -44101568, "dback_ms": -34.99}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 147, 16), (3, 7, 7, 7, 7, 1, 147, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 16941456, "dback_ms": 23.85}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1316, 1, 2, 2, 32), (7, 7, 1, 1316, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -16507904, "dback_ms": -11.72}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 168, 16), (4, 7, 7, 7, 7, 1, 168, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 25815552, "dback_ms": 28.68}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 644, 52), (7, 7, 7, 1, 644, 52))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 11486384, "dback_ms": 11.44}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 192, 1, 32), (7, 7, 7, 7, 1, 192, 2, 32))", "n_a": 2, "n_b": 1, "d": -1, "dflop": -29503488, "dback_ms": -23.0}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2296, 2, 2, 2, 32), (7, 1, 2296, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4114432, "dback_ms": -2.91}
+{"op": "add", "sub": null, "shapes": "((1, 3072, 496), (1, 3072, 496))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -1523712, "dback_ms": -1.0}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 151, 16), (4, 7, 7, 7, 7, 1, 151, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 23203264, "dback_ms": 30.99}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 144, 16), (3, 7, 7, 7, 7, 1, 144, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 16595712, "dback_ms": 21.51}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 147, 14), (4, 7, 7, 7, 7, 1, 147, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19765032, "dback_ms": 26.26}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 2, 2, 64, 2, 32), (7, 7, 7, 1, 2, 2, 64, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -5619712, "dback_ms": -7.33}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1316, 96), (7, 7, 1, 1316, 96))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -6190464, "dback_ms": -6.52}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 288, 32), (7, 7, 7, 7, 1, 288, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 22127616, "dback_ms": 21.22}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 630, 2, 32), (7, 7, 7, 1, 630, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -13829760, "dback_ms": -10.22}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 147, 14), (3, 4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1829677248, "dback_ms": 39.43}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 151, 14), (3, 3, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1409598288, "dback_ms": 28.57}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1260, 100), (7, 7, 1, 1260, 100))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -6174000, "dback_ms": -6.41}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 158, 13), (3, 4, 7, 7, 7, 7, 1, 13, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1820918400, "dback_ms": 39.01}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 302, 1, 32), (7, 7, 7, 7, 1, 302, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 46406528, "dback_ms": 37.52}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2304, 1, 2, 2, 2, 32), (7, 1, 2304, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 8257536, "dback_ms": 6.76}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2, 2, 2, 2, 64, 2, 2, 2, 32), (7, 1, 2, 2, 2, 2, 64, 2, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -1835008, "dback_ms": -1.84}
+{"op": "add", "sub": null, "shapes": "((1, 5040, 400), (1, 5040, 400))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2016000, "dback_ms": -1.68}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1204, 2, 2, 32), (7, 7, 1, 1204, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -7551488, "dback_ms": -4.99}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 660, 48), (7, 7, 7, 1, 660, 48))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 10866240, "dback_ms": 12.06}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 144, 14), (3, 4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1792336896, "dback_ms": 35.48}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 329, 24), (4, 7, 7, 7, 7, 1, 24, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4752212864, "dback_ms": -46.97}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 302, 28), (7, 7, 7, 7, 1, 302, 28))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 20302856, "dback_ms": 21.22}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2352, 216), (7, 1, 2352, 216))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3556224, "dback_ms": -3.53}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 330, 32), (7, 7, 7, 7, 1, 330, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 25354560, "dback_ms": 24.32}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1264, 104), (7, 7, 1, 1264, 104))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 6441344, "dback_ms": 6.52}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 96, 16), (3, 3, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1028934144, "dback_ms": 22.62}
+{"op": "subtract", "sub": null, "shapes": "((1, 5264, 2, 2, 2, 2, 32), (1, 5264, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2695168, "dback_ms": -1.53}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 316, 1, 32), (7, 7, 7, 7, 1, 316, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 48557824, "dback_ms": 38.54}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 161, 13), (3, 3, 7, 7, 7, 7, 1, 13, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1391619600, "dback_ms": 29.67}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 256, 30), (4, 7, 7, 7, 7, 1, 30, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4641882112, "dback_ms": -43.38}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 574, 2, 32), (7, 7, 7, 1, 574, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -12600448, "dback_ms": -9.19}
+{"op": "add", "sub": null, "shapes": "((7, 1, 1536, 248), (7, 1, 1536, 248))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2666496, "dback_ms": -2.32}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 616, 54), (7, 7, 7, 1, 616, 54))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -11409552, "dback_ms": -13.45}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 604, 1, 2, 32), (7, 7, 7, 1, 604, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 26518016, "dback_ms": 23.24}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 151, 14), (3, 7, 7, 7, 7, 1, 151, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 15227142, "dback_ms": 19.29}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 644, 50), (7, 7, 7, 1, 644, 50))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -11044600, "dback_ms": -11.5}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2640, 1, 2, 2, 2, 32), (7, 1, 2640, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 9461760, "dback_ms": 7.55}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 602, 1, 2, 32), (7, 7, 7, 1, 602, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -26430208, "dback_ms": -24.57}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2408, 216), (7, 1, 2408, 216))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3640896, "dback_ms": -4.0}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2528, 2, 2, 2, 32), (7, 1, 2528, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 4530176, "dback_ms": 3.22}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2352, 224), (7, 1, 2352, 224))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 3687936, "dback_ms": 3.34}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 512, 2, 32), (7, 7, 7, 1, 512, 2, 32))", "n_a": 1, "n_b": 2, "d": 1, "dflop": 11239424, "dback_ms": 8.8}
+{"op": "subtract", "sub": null, "shapes": "((1, 2, 2, 2, 2, 64, 2, 2, 2, 2, 32), (1, 2, 2, 2, 2, 64, 2, 2, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -524288, "dback_ms": -0.68}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2144, 232), (7, 1, 2144, 232))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3481856, "dback_ms": -3.16}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 576, 2, 32), (7, 7, 7, 1, 576, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 12644352, "dback_ms": 9.28}
+{"op": "concatenate", "sub": null, "shapes": "()", "n_a": 311, "n_b": 310, "d": -1, "dflop": 131072, "dback_ms": -103.9}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 604, 2, 32), (7, 7, 7, 1, 604, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 13259008, "dback_ms": 9.73}
+{"op": "add", "sub": null, "shapes": "((1, 5040, 1, 2, 2, 2, 2, 32), (1, 5040, 2, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -5160960, "dback_ms": -4.05}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 154, 16), (3, 7, 7, 7, 7, 1, 154, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 17748192, "dback_ms": 23.26}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 536, 60), (7, 7, 7, 1, 536, 60))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 11030880, "dback_ms": 10.57}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 768, 1, 2, 2, 32), (7, 7, 1, 768, 2, 2, 2, 32))", "n_a": 2, "n_b": 1, "d": -1, "dflop": -9633792, "dback_ms": -6.79}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 576, 1, 2, 32), (7, 7, 7, 1, 576, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 25288704, "dback_ms": 22.35}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1264, 1, 2, 2, 32), (7, 7, 1, 1264, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 15855616, "dback_ms": 10.63}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1176, 108), (7, 7, 1, 1176, 108))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -6223392, "dback_ms": -6.05}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 329, 24), (7, 7, 7, 7, 1, 329, 24))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -18958296, "dback_ms": -23.24}
+{"op": "add", "sub": null, "shapes": "((1, 5056, 1, 2, 2, 2, 2, 32), (1, 5056, 2, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 5177344, "dback_ms": 4.04}
+{"op": "add", "sub": null, "shapes": "((1, 4832, 1, 2, 2, 2, 2, 32), (1, 4832, 2, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 4947968, "dback_ms": 3.66}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1024, 128), (7, 7, 1, 1024, 128))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 6422528, "dback_ms": 4.74}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 158, 16), (4, 7, 7, 7, 7, 1, 158, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 24278912, "dback_ms": 29.61}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1264, 2, 2, 32), (7, 7, 1, 1264, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 7927808, "dback_ms": 5.03}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 574, 56), (7, 7, 7, 1, 574, 56))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -11025392, "dback_ms": -11.32}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 140, 14), (3, 4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1742549760, "dback_ms": 35.77}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 165, 12), (3, 7, 7, 7, 7, 1, 165, 12))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 14261940, "dback_ms": 23.48}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 322, 25), (4, 7, 7, 7, 7, 1, 25, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4849021184, "dback_ms": -46.76}
+{"op": "add", "sub": null, "shapes": "((1, 4288, 464), (1, 4288, 464))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -1989632, "dback_ms": -1.8}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 64, 16), (3, 4, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 914608128, "dback_ms": 23.07}
+{"op": "add", "sub": null, "shapes": "((1, 5152, 416), (1, 5152, 416))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2143232, "dback_ms": 1.71}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 32, 16), (3, 4, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 457304064, "dback_ms": 24.5}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 316, 32), (7, 7, 7, 7, 1, 316, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 24278912, "dback_ms": 23.41}
+{"op": "negative", "sub": null, "shapes": "((1024,),)", "n_a": 28, "n_b": 27, "d": -1, "dflop": -1024, "dback_ms": -0.0}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 165, 16), (3, 7, 7, 7, 7, 1, 165, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19015920, "dback_ms": 22.29}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1072, 116), (7, 7, 1, 1072, 116))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -6093248, "dback_ms": -5.79}
+{"op": "subtract", "sub": null, "shapes": "((7, 1, 2048, 2, 2, 2, 32), (7, 1, 2048, 2, 2, 2, 32))", "n_a": 1, "n_b": 2, "d": 1, "dflop": 3670016, "dback_ms": 2.58}
+{"op": "add", "sub": null, "shapes": "((1, 1024, 512), (1, 1024, 512))", "n_a": 13, "n_b": 12, "d": -1, "dflop": -524288, "dback_ms": 0.03}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 329, 1, 32), (7, 7, 7, 7, 1, 329, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -50555456, "dback_ms": -40.68}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 512, 1, 2, 32), (7, 7, 7, 1, 512, 2, 2, 32))", "n_a": 1, "n_b": 2, "d": 1, "dflop": 22478848, "dback_ms": 19.85}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 2, 2, 64, 2, 2, 32), (7, 7, 1, 2, 2, 64, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -1605632, "dback_ms": -1.94}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 168, 12), (4, 7, 7, 7, 7, 1, 168, 12))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19361664, "dback_ms": 29.67}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 315, 25), (4, 7, 7, 7, 7, 1, 25, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4743607680, "dback_ms": -45.72}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 660, 1, 2, 32), (7, 7, 7, 1, 660, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 28976640, "dback_ms": 26.61}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 158, 13), (3, 3, 7, 7, 7, 7, 1, 13, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1365688800, "dback_ms": 29.55}
+{"op": "add", "sub": null, "shapes": "((1, 4592, 448), (1, 4592, 448))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2057216, "dback_ms": -1.6}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2416, 224), (7, 1, 2416, 224))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 3788288, "dback_ms": 3.7}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 301, 1, 32), (7, 7, 7, 7, 1, 301, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -46252864, "dback_ms": -38.28}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2576, 208), (7, 1, 2576, 208))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 3750656, "dback_ms": 3.46}
+{"op": "subtract", "sub": null, "shapes": "((1, 5056, 2, 2, 2, 2, 32), (1, 5056, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2588672, "dback_ms": 1.39}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 151, 14), (3, 4, 7, 7, 7, 7, 1, 14, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1879464384, "dback_ms": 38.29}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 632, 1, 2, 32), (7, 7, 7, 1, 632, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 27747328, "dback_ms": 24.01}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 658, 2, 32), (7, 7, 7, 1, 658, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -14444416, "dback_ms": -10.79}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 161, 13), (4, 7, 7, 7, 7, 1, 161, 13))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 20101172, "dback_ms": 27.62}
+{"op": "subtract", "sub": null, "shapes": "((1, 4816, 2, 2, 2, 2, 32), (1, 4816, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2465792, "dback_ms": -1.58}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 140, 14), (4, 7, 7, 7, 7, 1, 140, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 18823840, "dback_ms": 24.3}
+{"op": "add", "sub": null, "shapes": "((1, 5152, 400), (1, 5152, 400))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2060800, "dback_ms": -1.71}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 158, 13), (4, 7, 7, 7, 7, 1, 158, 13))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19726616, "dback_ms": 28.77}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 192, 31), (4, 7, 7, 7, 7, 1, 31, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -3599425536, "dback_ms": -37.7}
+{"op": "add", "sub": null, "shapes": "((1, 4816, 1, 2, 2, 2, 2, 32), (1, 4816, 2, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4931584, "dback_ms": -3.73}
+{"op": "add", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 154, 14), (3, 7, 7, 7, 7, 1, 154, 14))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 15529668, "dback_ms": 19.91}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1288, 100), (7, 7, 1, 1288, 100))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -6311200, "dback_ms": -6.36}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 268, 30), (7, 7, 7, 7, 1, 268, 30))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19304040, "dback_ms": 19.95}
+{"op": "add", "sub": null, "shapes": "((1, 1, 2, 2, 2, 2, 64, 2, 2, 2, 2, 32), (1, 2, 2, 2, 2, 2, 64, 2, 2, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -1048576, "dback_ms": -1.42}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 168, 12), (3, 4, 7, 7, 7, 7, 1, 12, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1781273088, "dback_ms": 32.21}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 165, 12), (3, 3, 7, 7, 7, 7, 1, 12, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1312098480, "dback_ms": 25.68}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 128, 64), (7, 7, 7, 1, 128, 64))", "n_a": 13, "n_b": 12, "d": -1, "dflop": -2809856, "dback_ms": -2.05}
+{"op": "add", "sub": null, "shapes": "((1, 4704, 448), (1, 4704, 448))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2107392, "dback_ms": 1.72}
+{"op": "subtract", "sub": null, "shapes": "((1, 3072, 2, 2, 2, 2, 32), (1, 3072, 2, 2, 2, 2, 32))", "n_a": 2, "n_b": 1, "d": -1, "dflop": -1572864, "dback_ms": -0.84}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 147, 16), (4, 7, 7, 7, 7, 1, 147, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 22588608, "dback_ms": 32.11}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 1, 1024, 2, 2, 32), (7, 7, 1, 1024, 2, 2, 32))", "n_a": 1, "n_b": 2, "d": 1, "dflop": 6422528, "dback_ms": 4.32}
+{"op": "add", "sub": null, "shapes": "((1, 4592, 1, 2, 2, 2, 2, 32), (1, 4592, 2, 2, 2, 2, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4702208, "dback_ms": -3.57}
+{"op": "subtract", "sub": null, "shapes": "((1, 4832, 2, 2, 2, 2, 32), (1, 4832, 2, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2473984, "dback_ms": 1.32}
+{"op": "reshape", "sub": null, "shapes": "((4302592,),)", "n_a": 0, "n_b": 1, "d": 1, "dflop": 4302592, "dback_ms": 0.0}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 512, 64), (7, 7, 7, 1, 512, 64))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 11239424, "dback_ms": 9.12}
+{"op": "add", "sub": null, "shapes": "((1, 4288, 480), (1, 4288, 480))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2058240, "dback_ms": 1.75}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 1, 632, 52), (7, 7, 7, 1, 632, 52))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 11272352, "dback_ms": 11.99}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 1, 602, 2, 32), (7, 7, 7, 1, 602, 2, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -13215104, "dback_ms": -10.35}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 1, 64, 32), (7, 7, 7, 7, 1, 2, 64, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -9834496, "dback_ms": -10.61}
+{"op": "subtract", "sub": null, "shapes": "((7, 7, 7, 7, 1, 192, 32), (7, 7, 7, 7, 1, 192, 32))", "n_a": 9, "n_b": 8, "d": -1, "dflop": -14751744, "dback_ms": -12.11}
+{"op": "argsort", "sub": null, "shapes": "((1024,),)", "n_a": 12, "n_b": 11, "d": -1, "dflop": -40960, "dback_ms": -0.11}
+{"op": "zeros", "sub": null, "shapes": "()", "n_a": 23, "n_b": 24, "d": 1, "dflop": 0, "dback_ms": 0.22}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1232, 108), (7, 7, 1, 1232, 108))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -6519744, "dback_ms": -6.85}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 3, 7, 7, 7, 7, 1, 32, 16), (3, 3, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 342978048, "dback_ms": 11.08}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 268, 29), (7, 7, 7, 7, 1, 268, 29))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -18660572, "dback_ms": -19.93}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 165, 16), (4, 7, 7, 7, 7, 1, 165, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 25354560, "dback_ms": 29.76}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 144, 16), (4, 7, 7, 7, 7, 1, 144, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 22127616, "dback_ms": 28.65}
+{"op": "add", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 165, 12), (4, 7, 7, 7, 7, 1, 165, 12))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19015920, "dback_ms": 31.59}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 161, 16), (4, 7, 7, 7, 7, 1, 161, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 24739904, "dback_ms": 30.59}
+{"op": "subtract", "sub": null, "shapes": "((4, 7, 7, 7, 7, 1, 140, 16), (4, 7, 7, 7, 7, 1, 140, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 21512960, "dback_ms": 28.96}
+{"op": "add", "sub": null, "shapes": "((1, 4928, 448), (1, 4928, 448))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 2207744, "dback_ms": 1.84}
+{"op": "add", "sub": null, "shapes": "((7, 1, 2144, 240), (7, 1, 2144, 240))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 3601920, "dback_ms": 3.32}
+{"op": "subtract", "sub": null, "shapes": "((3, 7, 7, 7, 7, 1, 168, 16), (3, 7, 7, 7, 7, 1, 168, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19361664, "dback_ms": 20.9}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1, 2, 2, 64, 2, 2, 32), (7, 7, 1, 2, 2, 2, 64, 2, 2, 32))", "n_a": 12, "n_b": 11, "d": -1, "dflop": -3211264, "dback_ms": -3.49}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1320, 96), (7, 7, 1, 1320, 96))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 6209280, "dback_ms": 6.49}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 308, 28), (7, 7, 7, 7, 1, 308, 28))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 20706224, "dback_ms": 22.14}
+{"op": "matmul", "sub": "cdefghlij,cdefghljk->cdefghlik", "shapes": "((3, 4, 7, 7, 7, 7, 1, 96, 16), (3, 4, 7, 7, 7, 7, 1, 16, 16))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 1371912192, "dback_ms": 30.35}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 308, 27), (7, 7, 7, 7, 1, 308, 27))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -19966716, "dback_ms": -23.7}
+{"op": "add", "sub": null, "shapes": "((1, 5264, 384), (1, 5264, 384))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -2021376, "dback_ms": -2.37}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1208, 1, 2, 2, 32), (7, 7, 1, 1208, 2, 2, 2, 32))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 15153152, "dback_ms": 10.2}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 322, 25), (7, 7, 7, 7, 1, 322, 25))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -19328050, "dback_ms": -23.25}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1024, 1, 2, 2, 32), (7, 7, 1, 1024, 2, 2, 2, 32))", "n_a": 1, "n_b": 2, "d": 1, "dflop": 12845056, "dback_ms": 8.83}
+{"op": "add", "sub": null, "shapes": "((7, 7, 7, 7, 1, 330, 24), (7, 7, 7, 7, 1, 330, 24))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 19015920, "dback_ms": 24.52}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 268, 29), (4, 7, 7, 7, 7, 1, 29, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4694742528, "dback_ms": -48.14}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1232, 112), (7, 7, 1, 1232, 112))", "n_a": 0, "n_b": 1, "d": 1, "dflop": 6761216, "dback_ms": 6.44}
+{"op": "matmul", "sub": "cdefghij,cdefghjk->cdefghik", "shapes": "((4, 7, 7, 7, 7, 1, 294, 27), (4, 7, 7, 7, 7, 1, 27, 32))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -4788784896, "dback_ms": -46.56}
+{"op": "add", "sub": null, "shapes": "((7, 7, 1, 1148, 112), (7, 7, 1, 1148, 112))", "n_a": 1, "n_b": 0, "d": -1, "dflop": -6300224, "dback_ms": -5.89}

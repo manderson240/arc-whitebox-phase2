@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "~/cohezion-labs/arc-whitebox/research/rb149/arc_vs_ours_1024.py", line 24, in <module>
+    t0 = time.time(); out = mlp_kprop(mlp, K_in, output_all=True, up_to_layer=f"act{L-1}", **kw)
+                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/cohezion-labs/arc-whitebox/research/rb149/ref/src/mlp_kprop/kprop_harmonic.py", line 591, in mlp_kprop
+    K = nonlin_kprop(
+        K,
+    ...<4 lines>...
+        factor=factor,
+    )
+  File "~/cohezion-labs/arc-whitebox/research/rb149/ref/src/mlp_kprop/kprop_harmonic.py", line 369, in nonlin_kprop
+    return factored_nonlin_kprop_k3(
+        K_in=K_in,
+    ...<3 lines>...
+        use_pK=use_pK,
+    )
+  File "~/cohezion-labs/arc-whitebox/research/rb149/ref/src/mlp_kprop/factor_k3.py", line 349, in factored_nonlin_kprop_k3
+    pK_slices[int_part] += count * multiply_wicks(
+                                   ~~~~~~~~~~~~~~^
+        term,
+        ^^^^^
+    ...<4 lines>...
+        wick_lookup=get_wick_coef,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "~/cohezion-labs/arc-whitebox/research/rb149/ref/src/mlp_kprop/kprop_harmonic.py", line 177, in multiply_wicks
+    K_part = K_part * wick_coef.reshape(view_shape)
+             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RuntimeError: [enforce fail at alloc_cpu.cpp:127] err == 0. DefaultCPUAllocator: can't allocate memory: you tried to allocate 4294967296 bytes. Error code 12 (Cannot allocate memory)

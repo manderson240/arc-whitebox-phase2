@@ -1,0 +1,5 @@
+timing_lock: COMPUTE (shared) waiting (13:21:43): whest-starterkit/.venv/bin/python research/rb136/drive136.py research/rb136/arms_chk.json nets:0 research/rb136/results_chk.jsonl
+timing_lock: COMPUTE acquired (13:21:43, load 6.24)
+1 tasks, 1 workers x OMP 16
+  PRUNE 0.05: mean pruned fraction over layers 0.176 per-layer [0.0, 0.004, 0.034, 0.08, 0.135, 0.154, 0.177, 0.222, 0.246, 0.216, 0.22, 0.277, 0.281, 0.3, 0.3]
+done 1 tasks in 1219s = 3 tasks/h

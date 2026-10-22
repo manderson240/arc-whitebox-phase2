@@ -1,0 +1,8 @@
+80 tasks, 5 workers x OMP 2
+12/80 166 tasks/h
+24/80 159 tasks/h
+36/80 135 tasks/h
+48/80 136 tasks/h
+60/80 138 tasks/h
+72/80 132 tasks/h
+done 80 tasks in 2140s = 135 tasks/h

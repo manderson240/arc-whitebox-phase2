@@ -1,0 +1,218 @@
+## A) matmul by site (net 0, v112_sb)
+| C(d5+d6,leaf16)        | n=  200 |   4.5937 pt |  29.2 % | shapes=12 |
+| T(d5)                  | n=   52 |   4.4165 pt |  28.1 % | shapes=18 |
+| T2(d5)                 | n=   52 |   1.2820 pt |   8.2 % | shapes=2 |
+| F0(d4+d6,224)          | n=   56 |   0.7325 pt |   4.7 % | shapes=8 |
+| F1(d5,384)             | n=   40 |   0.6840 pt |   4.3 % | shapes=4 |
+| K1(d5,384)             | n=   36 |   0.6336 pt |   4.0 % | shapes=4 |
+| dense                  | n=  503 |   0.6121 pt |   3.9 % | shapes=56 |
+| K0(d4+d6,224)          | n=   49 |   0.6088 pt |   3.9 % | shapes=7 |
+| M2(d5,3-batch)         | n=   60 |   0.5547 pt |   3.5 % | shapes=2 |
+| E2(d4)                 | n=   10 |   0.4260 pt |   2.7 % | shapes=1 |
+| other4:(1, 16, 128, 16) | n=   20 |   0.3493 pt |   2.2 % | shapes=4 |
+| other4:(1, 16, 96, 16) | n=   20 |   0.2616 pt |   1.7 % | shapes=4 |
+| other4:(1, 128, 32, 32) | n=    4 |   0.1972 pt |   1.3 % | shapes=2 |
+| other4:(1, 16, 64, 16) | n=   20 |   0.1739 pt |   1.1 % | shapes=4 |
+| other4:(1, 16, 32, 16) | n=   20 |   0.0863 pt |   0.5 % | shapes=4 |
+| other0:(3, 1024, 2, 1024) | n=   30 |   0.0644 pt |   0.4 % | shapes=1 |
+| E1(d3)                 | n=    8 |   0.0489 pt |   0.3 % | shapes=2 |
+matmul total 15.7255 pt
+
+## B) glue classes (billed) and remote backend wall per class
+| matmul        | n= 1180 |  15.7255 pt |   345806428960 billed units |
+| add           | n= 3667 |   0.6578 pt |    14464936693 billed units |
+| subtract      | n= 4282 |   0.7592 pt |    16695877567 billed units |
+| stack         | n= 1125 |   0.3315 pt |     7288729220 billed units |
+| concatenate   | n=  295 |   0.0442 pt |      972480517 billed units |
+| reshape       | n=  218 |   0.1895 pt |     4167591232 billed units |
+| multiply      | n= 2233 |   0.2070 pt |     4551204429 billed units |
+| einsum        | n=  322 |   0.2893 pt |     6361366384 billed units |
+| linalg.solve  | n=   16 |   0.6609 pt |    14533307046 billed units |
+
+rb142/wall_v112.jsonl v105_sw: predicts=4 wall/predict=49.40 s backend/predict=44.29 s
+   matmul        calls/predict= 1183.0 backend/predict=  6.345 s overhead= 0.398 s
+   add           calls/predict= 3832.0 backend/predict= 10.295 s overhead= 0.748 s
+   subtract      calls/predict= 4549.0 backend/predict= 15.685 s overhead= 0.941 s
+   stack         calls/predict= 1215.0 backend/predict=  3.109 s overhead= 0.169 s
+   concatenate   calls/predict=  311.0 backend/predict=  2.390 s overhead= 0.047 s
+   multiply      calls/predict= 2233.0 backend/predict=  1.545 s overhead= 0.322 s
+   einsum        calls/predict=  313.0 backend/predict=  0.509 s overhead= 0.099 s
+   reshape       calls/predict=  120.0 backend/predict=  0.001 s overhead= 0.010 s
+   transpose     calls/predict=  984.0 backend/predict=  0.004 s overhead= 0.066 s
+
+rb142/wall_v112.jsonl v112_sb: predicts=4 wall/predict=48.76 s backend/predict=43.93 s
+   matmul        calls/predict= 1180.0 backend/predict=  6.350 s overhead= 0.405 s
+   add           calls/predict= 3667.0 backend/predict= 11.133 s overhead= 0.717 s
+   subtract      calls/predict= 4282.0 backend/predict= 14.880 s overhead= 0.906 s
+   stack         calls/predict= 1125.0 backend/predict=  2.940 s overhead= 0.156 s
+   concatenate   calls/predict=  295.0 backend/predict=  2.248 s overhead= 0.045 s
+   multiply      calls/predict= 2233.0 backend/predict=  1.544 s overhead= 0.321 s
+   einsum        calls/predict=  322.0 backend/predict=  0.506 s overhead= 0.105 s
+   linalg.solve  calls/predict=   16.0 backend/predict=  0.352 s overhead= 0.003 s
+   reshape       calls/predict=  124.0 backend/predict=  0.001 s overhead= 0.011 s
+   transpose     calls/predict=  845.0 backend/predict=  0.004 s overhead= 0.056 s
+
+rb137/wall.jsonl v99r_rm: predicts=4 wall/predict=51.99 s backend/predict=46.86 s
+   matmul        calls/predict= 1187.0 backend/predict=  7.067 s overhead= 0.395 s
+   add           calls/predict= 3842.0 backend/predict= 11.168 s overhead= 0.724 s
+   subtract      calls/predict= 4578.0 backend/predict= 16.798 s overhead= 0.899 s
+   stack         calls/predict= 1194.0 backend/predict=  3.047 s overhead= 0.159 s
+   concatenate   calls/predict=  311.0 backend/predict=  2.326 s overhead= 0.045 s
+   multiply      calls/predict= 2188.0 backend/predict=  1.611 s overhead= 0.305 s
+   einsum        calls/predict=  313.0 backend/predict=  0.551 s overhead= 0.099 s
+   reshape       calls/predict=  128.5 backend/predict=  0.001 s overhead= 0.011 s
+   transpose     calls/predict=  960.0 backend/predict=  0.004 s overhead= 0.077 s
+
+rb137/wall.jsonl v105_sw: predicts=4 wall/predict=50.74 s backend/predict=45.94 s
+   matmul        calls/predict= 1183.0 backend/predict=  6.643 s overhead= 0.383 s
+   add           calls/predict= 3832.0 backend/predict= 10.771 s overhead= 0.707 s
+   subtract      calls/predict= 4549.0 backend/predict= 16.594 s overhead= 0.896 s
+   stack         calls/predict= 1215.0 backend/predict=  3.219 s overhead= 0.161 s
+   concatenate   calls/predict=  311.0 backend/predict=  2.357 s overhead= 0.045 s
+   multiply      calls/predict= 2233.0 backend/predict=  1.604 s overhead= 0.310 s
+   einsum        calls/predict=  313.0 backend/predict=  0.518 s overhead= 0.096 s
+   reshape       calls/predict=  120.0 backend/predict=  0.001 s overhead= 0.010 s
+   transpose     calls/predict=  984.0 backend/predict=  0.004 s overhead= 0.064 s
+
+rb137/wall.jsonl v106_1x: predicts=4 wall/predict=60.95 s backend/predict=55.82 s
+   matmul        calls/predict= 1267.0 backend/predict=  7.717 s overhead= 0.429 s
+   add           calls/predict= 4004.5 backend/predict= 15.738 s overhead= 0.762 s
+   subtract      calls/predict= 4675.0 backend/predict= 19.922 s overhead= 0.922 s
+   stack         calls/predict= 1216.5 backend/predict=  3.621 s overhead= 0.168 s
+   concatenate   calls/predict=  309.5 backend/predict=  2.348 s overhead= 0.044 s
+   multiply      calls/predict= 2233.0 backend/predict=  1.599 s overhead= 0.312 s
+   einsum        calls/predict=  313.0 backend/predict=  0.521 s overhead= 0.098 s
+   reshape       calls/predict=  122.0 backend/predict=  0.001 s overhead= 0.011 s
+   transpose     calls/predict=  986.5 backend/predict=  0.004 s overhead= 0.064 s
+
+rb137/wall.jsonl v102_sz: predicts=4 wall/predict=65.89 s backend/predict=60.42 s
+   matmul        calls/predict= 1477.5 backend/predict=  8.758 s overhead= 0.503 s
+   add           calls/predict= 4169.0 backend/predict= 17.103 s overhead= 0.802 s
+   subtract      calls/predict= 4990.0 backend/predict= 21.830 s overhead= 1.022 s
+   stack         calls/predict= 1216.5 backend/predict=  3.663 s overhead= 0.163 s
+   concatenate   calls/predict=  309.5 backend/predict=  2.365 s overhead= 0.044 s
+   multiply      calls/predict= 2233.0 backend/predict=  1.568 s overhead= 0.303 s
+   einsum        calls/predict=  313.0 backend/predict=  0.515 s overhead= 0.101 s
+   reshape       calls/predict=  128.5 backend/predict=  0.001 s overhead= 0.011 s
+   transpose     calls/predict=  988.5 backend/predict=  0.004 s overhead= 0.065 s
+
+rb139/wall2.jsonl v105_sw: predicts=4 wall/predict=50.49 s backend/predict=45.68 s
+   matmul        calls/predict= 1183.0 backend/predict=  6.608 s overhead= 0.375 s
+   add           calls/predict= 3832.0 backend/predict= 10.735 s overhead= 0.664 s
+   subtract      calls/predict= 4549.0 backend/predict= 16.555 s overhead= 0.858 s
+   stack         calls/predict= 1215.0 backend/predict=  3.240 s overhead= 0.155 s
+   concatenate   calls/predict=  311.0 backend/predict=  2.369 s overhead= 0.043 s
+   multiply      calls/predict= 2233.0 backend/predict=  1.578 s overhead= 0.301 s
+   einsum        calls/predict=  313.0 backend/predict=  0.512 s overhead= 0.095 s
+   reshape       calls/predict=  120.0 backend/predict=  0.001 s overhead= 0.010 s
+   transpose     calls/predict=  984.0 backend/predict=  0.004 s overhead= 0.062 s
+
+rb139/wall2.jsonl v110_fk: predicts=4 wall/predict=53.98 s backend/predict=49.00 s
+   matmul        calls/predict= 1273.0 backend/predict=  7.165 s overhead= 0.412 s
+   add           calls/predict= 3937.0 backend/predict= 12.065 s overhead= 0.720 s
+   subtract      calls/predict= 4669.0 backend/predict= 17.800 s overhead= 0.929 s
+   stack         calls/predict= 1215.0 backend/predict=  3.197 s overhead= 0.161 s
+   concatenate   calls/predict=  311.0 backend/predict=  2.341 s overhead= 0.044 s
+   multiply      calls/predict= 2233.0 backend/predict=  1.579 s overhead= 0.311 s
+   einsum        calls/predict=  313.0 backend/predict=  0.516 s overhead= 0.097 s
+   reshape       calls/predict=  124.0 backend/predict=  0.001 s overhead= 0.010 s
+   transpose     calls/predict=  984.0 backend/predict=  0.004 s overhead= 0.064 s
+
+## C) multi-operand einsum chains: shipped billed cost vs all pairwise orders (flopscope billing)
+
+ki,kij,kj->ij ((5, 1024), (5, 1024, 1024), (5, 1024)) x75: shipped/call 0.00067 pt (14,680,064.0 units)
+   naive single-pass 0.00067 pt | opt_einsum optimal [(1, 2), (0, 1)] -> 0.00067 | dp [(1, 2), (0, 1)] -> 0.00067
+   order [(0, 1), (0, 1)]: 0.00067 pt <-- cheapest
+   order [(0, 2), (0, 1)]: 0.00067 pt <-- cheapest
+   order [(1, 2), (0, 1)]: 0.00067 pt <-- cheapest
+   possible saving vs shipped: 0.00000 pt over 75 calls
+
+ab,aij,bij->ij ((3, 3), (3, 1024, 1024), (3, 1024, 1024)) x14: shipped/call 0.00095 pt (20,971,520.0 units)
+   naive single-pass 0.00095 pt | opt_einsum optimal [(0, 1), (0, 1)] -> 0.00095 | dp [(0, 2), (0, 1)] -> 0.00095
+   order [(0, 1), (0, 1)]: 0.00095 pt <-- cheapest
+   order [(0, 2), (0, 1)]: 0.00095 pt <-- cheapest
+   order [(1, 2), (0, 1)]: 0.00124 pt 
+   possible saving vs shipped: 0.00000 pt over 14 calls
+
+ab,ai,bj->ij ((3, 3), (3, 1024), (3, 1024)) x14: shipped/call 0.00024 pt (5,258,240.0 units)
+   naive single-pass 0.00024 pt | opt_einsum optimal [(0, 1), (0, 1)] -> 0.00024 | dp [(0, 2), (0, 1)] -> 0.00024
+   order [(0, 1), (0, 1)]: 0.00024 pt <-- cheapest
+   order [(0, 2), (0, 1)]: 0.00024 pt <-- cheapest
+   order [(1, 2), (0, 1)]: 0.00124 pt 
+   possible saving vs shipped: 0.00000 pt over 14 calls
+
+ab,ai,bij->ij ((3, 3), (3, 1024), (3, 1024, 1024)) x14: shipped/call 0.00024 pt (5,258,240.0 units)
+   naive single-pass 0.00024 pt | opt_einsum optimal [(0, 1), (0, 1)] -> 0.00024 | dp [(0, 1), (0, 1)] -> 0.00024
+   order [(0, 1), (0, 1)]: 0.00024 pt <-- cheapest
+   order [(0, 2), (0, 1)]: 0.00095 pt 
+   order [(1, 2), (0, 1)]: 0.00124 pt 
+   possible saving vs shipped: 0.00000 pt over 14 calls
+
+ab,aij,bi->ij ((3, 3), (3, 1024, 1024), (3, 1024)) x14: shipped/call 0.00024 pt (5,258,240.0 units)
+   naive single-pass 0.00024 pt | opt_einsum optimal [(0, 2), (0, 1)] -> 0.00024 | dp [(0, 2), (0, 1)] -> 0.00024
+   order [(0, 2), (0, 1)]: 0.00024 pt <-- cheapest
+   order [(0, 1), (0, 1)]: 0.00095 pt 
+   order [(1, 2), (0, 1)]: 0.00124 pt 
+   possible saving vs shipped: 0.00000 pt over 14 calls
+
+ab,ai,bi->i ((3, 3), (3, 1024), (3, 1024)) x14: shipped/call 0.00000 pt (20,480.0 units)
+   naive single-pass 0.00000 pt | opt_einsum optimal [(0, 1), (0, 1)] -> 0.00000 | dp [(0, 2), (0, 1)] -> 0.00000
+   order [(0, 1), (0, 1)]: 0.00000 pt <-- cheapest
+   order [(0, 2), (0, 1)]: 0.00000 pt <-- cheapest
+   order [(1, 2), (0, 1)]: 0.00000 pt 
+   possible saving vs shipped: 0.00000 pt over 14 calls
+
+ab,ai,bi->i ((2, 2), (2, 1024), (2, 1024)) x1: shipped/call 0.00000 pt (9,216.0 units)
+   naive single-pass 0.00000 pt | opt_einsum optimal [(0, 1), (0, 1)] -> 0.00000 | dp [(0, 2), (0, 1)] -> 0.00000
+   order [(0, 1), (0, 1)]: 0.00000 pt <-- cheapest
+   order [(0, 2), (0, 1)]: 0.00000 pt <-- cheapest
+   order [(1, 2), (0, 1)]: 0.00000 pt 
+   possible saving vs shipped: 0.00000 pt over 1 calls
+
+## D) pricing alternative schemes on the top two levels of each Winograd site (flopscope billing)
+wall constants: add/sub sweep 1.44 ns/element (G-RB137); v112 matmul 6.35 s/predict for 3.458e+11 billed -> 54.5 GFLOP/s effective
+
+### C(d5+d6,leaf16): c=1 (1024 x 10880) @ (10880 x 1024) depth 5, ~14 calls/net (dims of ONE representative call)
+   Winograd^2 (shipped, 49, 15+7x15 adds, 5-add nested recomb): d_mm +0.0000 pt, d_glue +0.0029 pt, d_util +0.0029 pt, d_wall +0.093 s/predict
+   Strassen^2 (49, 18+7x18 adds): d_mm +0.0000 pt, d_glue +0.0110 pt, d_util +0.0110 pt, d_wall +0.350 s/predict
+   DPS2025_4x4x4_48_(289adds+26shifts): d_mm -0.1518 pt, d_glue +0.0675 pt, d_util -0.0844 pt, d_wall +2.081 s/predict
+
+### T(d5): c=1 (8800 x 864) @ (864 x 1024) depth 5, ~14 calls/net (dims of ONE representative call)
+   Winograd^2 (shipped, 49, 15+7x15 adds, 5-add nested recomb): d_mm +0.0000 pt, d_glue -0.0040 pt, d_util -0.0040 pt, d_wall -0.128 s/predict
+   Strassen^2 (49, 18+7x18 adds): d_mm +0.0000 pt, d_glue +0.0073 pt, d_util +0.0073 pt, d_wall +0.231 s/predict
+   DPS2025_4x4x4_48_(289adds+26shifts): d_mm -0.1018 pt, d_glue +0.0484 pt, d_util -0.0534 pt, d_wall +1.496 s/predict
+
+### T2(d5): c=1 (2048 x 1024) @ (1024 x 1024) depth 5, ~13 calls/net (dims of ONE representative call)
+   Winograd^2 (shipped, 49, 15+7x15 adds, 5-add nested recomb): d_mm +0.0000 pt, d_glue -0.0007 pt, d_util -0.0007 pt, d_wall -0.022 s/predict
+   Strassen^2 (49, 18+7x18 adds): d_mm +0.0000 pt, d_glue +0.0021 pt, d_util +0.0021 pt, d_wall +0.066 s/predict
+   DPS2025_4x4x4_48_(289adds+26shifts): d_mm -0.0262 pt, d_glue +0.0134 pt, d_util -0.0128 pt, d_wall +0.414 s/predict
+
+### M2(d5,3-batch): c=3 (512 x 1024) @ (1024 x 512) depth 5, ~15 calls/net (dims of ONE representative call)
+   Winograd^2 (shipped, 49, 15+7x15 adds, 5-add nested recomb): d_mm +0.0000 pt, d_glue +0.0000 pt, d_util +0.0000 pt, d_wall +0.001 s/predict
+   Strassen^2 (49, 18+7x18 adds): d_mm +0.0000 pt, d_glue +0.0019 pt, d_util +0.0019 pt, d_wall +0.061 s/predict
+   DPS2025_4x4x4_48_(289adds+26shifts): d_mm -0.0113 pt, d_glue +0.0117 pt, d_util +0.0004 pt, d_wall +0.367 s/predict
+
+### F1(d5,384): c=2 (1024 x 384) @ (384 x 2048) depth 5, ~9 calls/net (dims of ONE representative call)
+   Winograd^2 (shipped, 49, 15+7x15 adds, 5-add nested recomb): d_mm +0.0000 pt, d_glue -0.0014 pt, d_util -0.0014 pt, d_wall -0.043 s/predict
+   Strassen^2 (49, 18+7x18 adds): d_mm +0.0000 pt, d_glue +0.0017 pt, d_util +0.0017 pt, d_wall +0.054 s/predict
+   DPS2025_4x4x4_48_(289adds+26shifts): d_mm -0.0132 pt, d_glue +0.0100 pt, d_util -0.0032 pt, d_wall +0.314 s/predict
+
+### K1(d5,384): c=2 (1024 x 2048) @ (2048 x 384) depth 5, ~8 calls/net (dims of ONE representative call)
+   Winograd^2 (shipped, 49, 15+7x15 adds, 5-add nested recomb): d_mm +0.0000 pt, d_glue +0.0003 pt, d_util +0.0003 pt, d_wall +0.008 s/predict
+   Strassen^2 (49, 18+7x18 adds): d_mm +0.0000 pt, d_glue +0.0017 pt, d_util +0.0017 pt, d_wall +0.055 s/predict
+   DPS2025_4x4x4_48_(289adds+26shifts): d_mm -0.0122 pt, d_glue +0.0115 pt, d_util -0.0007 pt, d_wall +0.360 s/predict
+
+### F0(d4+d6,224): c=7 (512 x 224) @ (224 x 2048) depth 4, ~1 calls/net (dims of ONE representative call)
+   Winograd^2 (shipped, 49, 15+7x15 adds, 5-add nested recomb): d_mm +0.0000 pt, d_glue -0.0003 pt, d_util -0.0003 pt, d_wall -0.008 s/predict
+   Strassen^2 (49, 18+7x18 adds): d_mm +0.0000 pt, d_glue +0.0003 pt, d_util +0.0003 pt, d_wall +0.010 s/predict
+   DPS2025_4x4x4_48_(289adds+26shifts): d_mm -0.0017 pt, d_glue +0.0019 pt, d_util +0.0002 pt, d_wall +0.059 s/predict
+
+### K0(d4+d6,224): c=7 (512 x 2048) @ (2048 x 224) depth 4, ~1 calls/net (dims of ONE representative call)
+   Winograd^2 (shipped, 49, 15+7x15 adds, 5-add nested recomb): d_mm +0.0000 pt, d_glue +0.0001 pt, d_util +0.0001 pt, d_wall +0.003 s/predict
+   Strassen^2 (49, 18+7x18 adds): d_mm +0.0000 pt, d_glue +0.0004 pt, d_util +0.0004 pt, d_wall +0.012 s/predict
+   DPS2025_4x4x4_48_(289adds+26shifts): d_mm -0.0018 pt, d_glue +0.0025 pt, d_util +0.0007 pt, d_wall +0.079 s/predict
+
+### E2(d4): c=1 (384 x 1024) @ (1024 x 2048) depth 4, ~10 calls/net (dims of ONE representative call)
+   Winograd^2 (shipped, 49, 15+7x15 adds, 5-add nested recomb): d_mm +0.0000 pt, d_glue -0.0001 pt, d_util -0.0001 pt, d_wall -0.002 s/predict
+   Strassen^2 (49, 18+7x18 adds): d_mm +0.0000 pt, d_glue +0.0011 pt, d_util +0.0011 pt, d_wall +0.033 s/predict
+   DPS2025_4x4x4_48_(289adds+26shifts): d_mm -0.0087 pt, d_glue +0.0057 pt, d_util -0.0030 pt, d_wall +0.178 s/predict

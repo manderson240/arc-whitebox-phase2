@@ -1,0 +1,6 @@
+P1 bias(full)=-1.014e-02  predicted tr(HS)/2N=-1.016e-02  SE=4.9e-05
+P1 Richardson residual=-2.394e-05 (should be ~0 within SE)
+P1 falsifier (non-smooth) Richardson residual=3.268e-02 vs SE 9.4e-05
+P1 skewed samples: Richardson residual N=8 -5.63e-03 (SE 5.3e-04), N=16 -1.37e-03 (SE 2.6e-04), N=32 -4.08e-04 (SE 1.3e-04); log-log slope -1.89 (expect ~ -2)
+P2 cond(Q)=6.2e+01  Gram-solve vs QR projection rel err=3.7e-15  naive QQ^T rel err=6.1e+05
+ALL PASS

@@ -1,0 +1,37 @@
+timing_lock: TIMING (exclusive) waiting (01:56:21)
+timing_lock: TIMING acquired (01:56:21, load 2.30)
+{"build": "submissions/v105_sw", "ops": 14863, "util": 20.3224, "out": "de7c8a53ff235abe"}
+{"build": "submissions/v110_t2", "ops": 15410, "util": 20.2237, "out": "bcd316226979ea89"}
+DIFFERENT
+timing_lock: TIMING (exclusive) waiting (01:57:54)
+timing_lock: TIMING acquired (01:57:54, load 4.75)
+Traceback (most recent call last):
+  File "~/cohezion-labs/arc-whitebox/research/rebuild/fingerprint.py", line 54, in <module>
+    fps = [fingerprint(b) for b in sys.argv[1:]]
+  File "~/cohezion-labs/arc-whitebox/research/rebuild/fingerprint.py", line 54, in <listcomp>
+    fps = [fingerprint(b) for b in sys.argv[1:]]
+  File "~/cohezion-labs/arc-whitebox/research/rebuild/fingerprint.py", line 41, in fingerprint
+    out = e.predict(mlp, B)
+  File "~/cohezion-labs/arc-whitebox/submissions/v110_fk/estimator.py", line 1246, in predict
+    PAo[G] = sw_matmul(Qz[G], oFPA[G], sites[("F", G)])  # (m,n,2n) = [Pz_b | Az_b]
+  File "~/cohezion-labs/arc-whitebox/submissions/v110_fk/estimator.py", line 818, in sw_matmul
+    _d6_fk(L, R, P, site.mini)  # v103 (G-RB126): F0 / K0 extra level into the plain d4 leaf
+  File "~/cohezion-labs/arc-whitebox/submissions/v110_fk/estimator.py", line 642, in _d6_fk
+    S3 = mini.getc("B3", c)  # [T2, T3, T1]
+AttributeError: '_MiniSite' object has no attribute 'getc'. Did you mean: 'get'?
+timing_lock: TIMING (exclusive) waiting (01:58:13)
+timing_lock: TIMING acquired (01:58:13, load 4.43)
+Traceback (most recent call last):
+  File "~/cohezion-labs/arc-whitebox/research/rebuild/fingerprint.py", line 54, in <module>
+    fps = [fingerprint(b) for b in sys.argv[1:]]
+  File "~/cohezion-labs/arc-whitebox/research/rebuild/fingerprint.py", line 54, in <listcomp>
+    fps = [fingerprint(b) for b in sys.argv[1:]]
+  File "~/cohezion-labs/arc-whitebox/research/rebuild/fingerprint.py", line 41, in fingerprint
+    out = e.predict(mlp, B)
+  File "~/cohezion-labs/arc-whitebox/submissions/v110_k0/estimator.py", line 1290, in predict
+    acc = sw_matmul(LPA, oFPA[G].transpose(0, 2, 1), sites[("K", G)])  # v99: [F_P|F_A]^T as a VIEW (no carried transposed copy)  # (m,n,r) = LP_b F_P^T + LA_b F_A^T  (view, valid until this site's next call)
+  File "~/cohezion-labs/arc-whitebox/submissions/v110_k0/estimator.py", line 818, in sw_matmul
+    _d6_fk(L, R, P, site.mini)  # v103 (G-RB126): F0 / K0 extra level into the plain d4 leaf
+  File "~/cohezion-labs/arc-whitebox/submissions/v110_k0/estimator.py", line 642, in _d6_fk
+    S3 = mini.getc("B3", c)  # [T2, T3, T1]
+AttributeError: '_MiniSite' object has no attribute 'getc'. Did you mean: 'get'?

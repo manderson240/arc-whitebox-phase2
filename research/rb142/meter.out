@@ -1,0 +1,9 @@
+{"build": "submissions/v110_fk", "ops": 15186, "util_pt": 20.2051, "net0_raw": 0.9519206996776267, "wall_s": 167.8, "by_op": {"matmul": 16.9568, "subtract": 0.7963, "add": 0.681, "linalg.qr": 0.4337, "stack": 0.3461, "einsum": 0.3073, "multiply": 0.2073, "reshape": 0.2057, "linalg.eigh": 0.1854, "concatenate": 0.0464, "take": 0.0197, "sum": 0.0086}}
+Traceback (most recent call last):
+  File "~/cohezion-labs/arc-whitebox/research/rb142/meter.py", line 23, in <module>
+    out = e.predict(mlp, B)
+  File "~/cohezion-labs/arc-whitebox/research/rb142/v143_stub/estimator.py", line 1318, in predict
+    lefts, axis=1, out=_big_view(self._pool, "B1", ("left", n), (n, 2 * n * _K_STEADY + r_all + 64), dt)[:, :kk]
+  File "~/cohezion-labs/arc-whitebox/research/rb142/v143_stub/estimator.py", line 922, in _big_view
+    assert n_el <= b.shape[0], (name, key, shape, b.shape)
+AssertionError: ('B1', ('left', 1024), (1024, 10912), (11141120,))

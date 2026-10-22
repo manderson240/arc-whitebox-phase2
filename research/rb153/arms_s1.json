@@ -1,0 +1,180 @@
+{
+ "CTL": {
+  "k31sD": 0.8,
+  "q22sD": 0.96,
+  "al07": 1.0,
+  "k31s": 0.72,
+  "ks": 0.7,
+  "hsD": 0.9,
+  "aged": [
+   [
+    6,
+    384
+   ],
+   [
+    8,
+    224
+   ]
+  ],
+  "shared": "fixed"
+ },
+ "VS1": {
+  "k31sD": 0.8,
+  "q22sD": 0.96,
+  "al07": 1.0,
+  "k31s": 0.72,
+  "ks": 0.7,
+  "hsD": 0.9,
+  "aged": [
+   [
+    6,
+    384
+   ],
+   [
+    8,
+    224
+   ]
+  ],
+  "shared": "fixed",
+  "vcal": {
+   "file": "rb153/models/vs1.json"
+  }
+ },
+ "VS2": {
+  "k31sD": 0.8,
+  "q22sD": 0.96,
+  "al07": 1.0,
+  "k31s": 0.72,
+  "ks": 0.7,
+  "hsD": 0.9,
+  "aged": [
+   [
+    6,
+    384
+   ],
+   [
+    8,
+    224
+   ]
+  ],
+  "shared": "fixed",
+  "vcal": {
+   "file": "rb153/models/vs2.json"
+  }
+ },
+ "VS3": {
+  "k31sD": 0.8,
+  "q22sD": 0.96,
+  "al07": 1.0,
+  "k31s": 0.72,
+  "ks": 0.7,
+  "hsD": 0.9,
+  "aged": [
+   [
+    6,
+    384
+   ],
+   [
+    8,
+    224
+   ]
+  ],
+  "shared": "fixed",
+  "vcal": {
+   "file": "rb153/models/vs3.json"
+  }
+ },
+ "VS1c": {
+  "k31sD": 0.8,
+  "q22sD": 0.96,
+  "al07": 1.0,
+  "k31s": 0.72,
+  "ks": 0.7,
+  "hsD": 0.9,
+  "aged": [
+   [
+    6,
+    384
+   ],
+   [
+    8,
+    224
+   ]
+  ],
+  "shared": "fixed",
+  "vcal": {
+   "file": "rb153/models/vs1.json"
+  },
+  "vmode": "corr"
+ },
+ "PLACEBO": {
+  "k31sD": 0.8,
+  "q22sD": 0.96,
+  "al07": 1.0,
+  "k31s": 0.72,
+  "ks": 0.7,
+  "hsD": 0.9,
+  "aged": [
+   [
+    6,
+    384
+   ],
+   [
+    8,
+    224
+   ]
+  ],
+  "shared": "fixed",
+  "vcal": {
+   "file": "rb153/models/vs3.json",
+   "perm": 1
+  }
+ },
+ "NEG": {
+  "k31sD": 0.8,
+  "q22sD": 0.96,
+  "al07": 1.0,
+  "k31s": 0.72,
+  "ks": 0.7,
+  "hsD": 0.9,
+  "aged": [
+   [
+    6,
+    384
+   ],
+   [
+    8,
+    224
+   ]
+  ],
+  "shared": "fixed",
+  "vcal": {
+   "file": "rb153/models/vs3.json",
+   "neg": 1
+  }
+ },
+ "PLACEBO0": {
+  "k31sD": 0.8,
+  "q22sD": 0.96,
+  "al07": 1.0,
+  "k31s": 0.72,
+  "ks": 0.7,
+  "hsD": 0.9,
+  "aged": [
+   [
+    6,
+    384
+   ],
+   [
+    8,
+    224
+   ]
+  ],
+  "shared": "fixed",
+  "vcal": {
+   "file": "rb153/models/vs3.json",
+   "perm": 1,
+   "demean": 1
+  }
+ }
+}
